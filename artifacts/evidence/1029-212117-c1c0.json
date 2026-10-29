@@ -1,0 +1,18 @@
+{
+  "run_id": "1029-212117-c1c0",
+  "kind": "upload_screening",
+  "timestamp": "2026-10-29T21:21:17",
+  "backend": "XGBoost + AQSVC (deployed) + usage-baseline models",
+  "file": "report-photo.jpg",
+  "layout": "screening summary",
+  "outputs": [
+    {
+      "battery_id": "SN-TEST-0003",
+      "grade": "T",
+      "state": "Safe",
+      "risk": "Elevated",
+      "best_app": "emergency_light"
+    }
+  ],
+  "summary": "upload report-photo.jpg: 1 screened"
+}

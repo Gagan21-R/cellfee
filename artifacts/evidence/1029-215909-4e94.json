@@ -1,0 +1,11 @@
+{
+  "run_id": "1029-215909-4e94",
+  "kind": "marketplace_verification",
+  "timestamp": "2026-10-29T21:59:09",
+  "backend": "testing partner confirmation (demo)",
+  "listing": "L-261029-D91CA9",
+  "partner": "Demo EV Diagnostics (Bengaluru)",
+  "outcome": "verified",
+  "reason": "Demo EV Diagnostics (Bengaluru) confirmed report DED-7340 and measured 84.9% SoH",
+  "summary": "L-261029-D91CA9: Verification completed"
+}

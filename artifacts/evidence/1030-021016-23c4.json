@@ -1,0 +1,46 @@
+{
+  "run_id": "1030-021016-23c4",
+  "kind": "sdk_screen",
+  "timestamp": "2026-10-30T02:10:16",
+  "backend": "QpiAI QCloud SDK (circuits) + QUBO-trained AQSVC",
+  "device": "QpiAI-QSV-Local",
+  "battery": {
+    "soh": 0.93,
+    "fade_100": 0.012,
+    "ir_mohm": 16.5,
+    "ir_rise_100": 0.08,
+    "temp_max_c": 34.0,
+    "charge_time_min": 11.5,
+    "cycles": 420
+  },
+  "p_xgb": 0.23861905932426453,
+  "p_aqsvc": 0.12192991648577241,
+  "aqsvc_votes": "46 of 100",
+  "grade": "C",
+  "suggested_action": "recycle",
+  "circuit": {
+    "qubits": 7,
+    "depth": 18,
+    "gates": 42,
+    "device": "QpiAI-QSV-Local"
+  },
+  "nearest_fleet_batteries": [
+    {
+      "id": "RB-1873",
+      "similarity": 0.95,
+      "action": "recycle"
+    },
+    {
+      "id": "RB-1444",
+      "similarity": 0.94,
+      "action": "recycle"
+    },
+    {
+      "id": "RB-1906",
+      "similarity": 0.929,
+      "action": "recycle"
+    }
+  ],
+  "seconds": 1.42,
+  "summary": "SDK screen: XGBoost 0.24, AQSVC 0.12, grade C"
+}

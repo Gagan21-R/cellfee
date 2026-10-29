@@ -1,0 +1,32 @@
+{
+  "run_id": "1029-203936-fe7d",
+  "kind": "upload_screening",
+  "timestamp": "2026-10-29T20:39:36",
+  "backend": "XGBoost + AQSVC (deployed) + usage-baseline models",
+  "file": "cellfee-sample-test-log.csv",
+  "layout": "cycle log",
+  "outputs": [
+    {
+      "battery_id": "RB-0004",
+      "grade": "A",
+      "state": "Safe",
+      "risk": "Low",
+      "best_app": "cold_chain"
+    },
+    {
+      "battery_id": "RB-0001",
+      "grade": "A",
+      "state": "Safe",
+      "risk": "Low",
+      "best_app": "emergency_light"
+    },
+    {
+      "battery_id": "RB-0003",
+      "grade": "C",
+      "state": "Stop use",
+      "risk": "Elevated",
+      "best_app": null
+    }
+  ],
+  "summary": "upload cellfee-sample-test-log.csv: 3 screened"
+}

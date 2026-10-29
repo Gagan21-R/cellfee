@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "qcloud_job_id": "",
+    "opt_job_id": "",
+    "shots": 2000,
+    "generated_at": "2026-10-29 20:55:13",
+    "qcloud_device": "QpiAI-QSV-Local",
+    "opt_solver": "QpiAI Opt local MILP (exact)",
+    "module_note": "24 of 33 batteries in batch 1 of 5,000 (all reuse and test cells, remaining slots recycle)",
+    "fleet_size": 33
+  },
+  "cells": [
+    {
+      "id": "C0001",
+      "soh": 0.9246,
+      "capacity_ah": 1.017,
+      "resistance_mohm": 15.97,
+      "p_xgb": 0.998,
+      "p_aqsvc": 0.96,
+      "disposition": "test",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c38 \u00b7 cycle 1400"
+    },
+    {
+      "id": "C0002",
+      "soh": 0.9306,
+      "capacity_ah": 1.024,
+      "resistance_mohm": 17.4,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "test",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c1 \u00b7 cycle 1440"
+    },
+    {
+      "id": "C0003",
+      "soh": 0.8579,
+      "capacity_ah": 0.944,
+      "resistance_mohm": 17.38,
+      "p_xgb": 0.018,
+      "p_aqsvc": 0.08,
+      "disposition": "recycle",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c2 \u00b7 cycle 2060"
+    },
+    {
+      "id": "C0004",
+      "soh": 0.9563,
+      "capacity_ah": 1.052,
+      "resistance_mohm": 15.59,
+      "p_xgb": 0.999,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "C",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c7 \u00b7 cycle 700"
+    },
+    {
+      "id": "C0005",
+      "soh": 0.9262,
+      "capacity_ah": 1.019,
+      "resistance_mohm": 15.43,
+      "p_xgb": 0.998,
+      "p_aqsvc": 0.92,
+      "disposition": "test",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c16 \u00b7 cycle 1100"
+    },
+    {
+      "id": "C0006",
+      "soh": 0.9665,
+      "capacity_ah": 1.063,
+      "resistance_mohm": 16.98,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "test",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c4 \u00b7 cycle 610"
+    },
+    {
+      "id": "C0007",
+      "soh": 0.9318,
+      "capacity_ah": 1.025,
+      "resistance_mohm": 15.83,
+      "p_xgb": 0.909,
+      "p_aqsvc": 0.96,
+      "disposition": "recycle",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c17 \u00b7 cycle 910"
+    },
+    {
+      "id": "C0008",
+      "soh": 0.9191,
+      "capacity_ah": 1.011,
+      "resistance_mohm": 15.62,
+      "p_xgb": 0.363,
+      "p_aqsvc": 0.68,
+      "disposition": "recycle",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c33 \u00b7 cycle 1020"
+    },
+    {
+      "id": "C0009",
+      "soh": 0.9451,
+      "capacity_ah": 1.04,
+      "resistance_mohm": 15.3,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "C",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c10 \u00b7 cycle 640"
+    },
+    {
+      "id": "C0010",
+      "soh": 0.9509,
+      "capacity_ah": 1.046,
+      "resistance_mohm": 15.24,
+      "p_xgb": 0.999,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "C",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c1 \u00b7 cycle 540"
+    },
+    {
+      "id": "C0011",
+      "soh": 0.9332,
+      "capacity_ah": 1.027,
+      "resistance_mohm": 15.67,
+      "p_xgb": 0.99,
+      "p_aqsvc": 0.96,
+      "disposition": "test",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c39 \u00b7 cycle 600"
+    },
+    {
+      "id": "C0012",
+      "soh": 0.8622,
+      "capacity_ah": 0.948,
+      "resistance_mohm": 18.0,
+      "p_xgb": 0.0,
+      "p_aqsvc": 0.0,
+      "disposition": "recycle",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c24 \u00b7 cycle 930"
+    },
+    {
+      "id": "C0013",
+      "soh": 0.9828,
+      "capacity_ah": 1.081,
+      "resistance_mohm": 16.68,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "B",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c29 \u00b7 cycle 120"
+    },
+    {
+      "id": "C0014",
+      "soh": 0.9782,
+      "capacity_ah": 1.076,
+      "resistance_mohm": 16.33,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "B",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c5 \u00b7 cycle 200"
+    },
+    {
+      "id": "C0015",
+      "soh": 0.8202,
+      "capacity_ah": 0.902,
+      "resistance_mohm": 16.98,
+      "p_xgb": 0.0,
+      "p_aqsvc": 0.0,
+      "disposition": "recycle",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c30 \u00b7 cycle 920"
+    },
+    {
+      "id": "C0016",
+      "soh": 0.9618,
+      "capacity_ah": 1.058,
+      "resistance_mohm": 16.02,
+      "p_xgb": 0.996,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "C",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c12 \u00b7 cycle 520"
+    },
+    {
+      "id": "C0017",
+      "soh": 0.9851,
+      "capacity_ah": 1.084,
+      "resistance_mohm": 16.42,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "A",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c19 \u00b7 cycle 160"
+    },
+    {
+      "id": "C0018",
+      "soh": 0.9954,
+      "capacity_ah": 1.095,
+      "resistance_mohm": 16.27,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "A",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c7 \u00b7 cycle 120"
+    },
+    {
+      "id": "C0019",
+      "soh": 0.9215,
+      "capacity_ah": 1.014,
+      "resistance_mohm": 15.55,
+      "p_xgb": 0.001,
+      "p_aqsvc": 0.04,
+      "disposition": "recycle",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b3c11 \u00b7 cycle 630"
+    },
+    {
+      "id": "C0021",
+      "soh": 0.9869,
+      "capacity_ah": 1.086,
+      "resistance_mohm": 16.54,
+      "p_xgb": 1.0,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "A",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c26 \u00b7 cycle 190"
+    },
+    {
+      "id": "C0023",
+      "soh": 0.9669,
+      "capacity_ah": 1.064,
+      "resistance_mohm": 16.16,
+      "p_xgb": 0.964,
+      "p_aqsvc": 1.0,
+      "disposition": "test",
+      "pack": null,
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c32 \u00b7 cycle 360"
+    },
+    {
+      "id": "C0024",
+      "soh": 0.9846,
+      "capacity_ah": 1.083,
+      "resistance_mohm": 16.94,
+      "p_xgb": 0.999,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "A",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c39 \u00b7 cycle 140"
+    },
+    {
+      "id": "C0025",
+      "soh": 0.9756,
+      "capacity_ah": 1.073,
+      "resistance_mohm": 16.78,
+      "p_xgb": 0.999,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "B",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c37 \u00b7 cycle 170"
+    },
+    {
+      "id": "C0026",
+      "soh": 0.9789,
+      "capacity_ah": 1.077,
+      "resistance_mohm": 16.25,
+      "p_xgb": 0.998,
+      "p_aqsvc": 1.0,
+      "disposition": "reuse",
+      "pack": "B",
+      "source": "MIT\u2013Stanford\u2013Toyota cell b1c30 \u00b7 cycle 190"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "run_id": "1029-154259-5722",
+  "kind": "allocation",
+  "timestamp": "2026-10-29T15:42:59",
+  "backend": "QpiAI Opt modeller + QpiAI Opt solver",
+  "label": "xgb_small",
+  "qubo": {
+    "variables": 153,
+    "terms": 2619,
+    "decision_variables": 150
+  },
+  "solver_runs": [
+    {
+      "solver": "Exact MILP (HiGHS)",
+      "objective": 4.986617738268515,
+      "optimal": true,
+      "seconds": 9.85
+    },
+    {
+      "solver": "QpiAI Opt local MILP (exact)",
+      "objective": 4.986617738268515,
+      "feasible": true,
+      "optimal": false,
+      "seconds": 7.8,
+      "matches_highs": true,
+      "info": "problem_class='MILP' execution_mode='local' provider='qpiai-opt-local' solver='HiGHS' method='mixed-integer-linear-programming' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_bound' source_objective=4.986617738268516 transformed=True settings={}"
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer (free-tier budget)",
+      "objective": 0.6586899562248199,
+      "feasible": false,
+      "seconds": 3.81,
+      "num_reads": 1,
+      "num_sweeps": 3426,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=False solution_feasible=False optimality_proven=False guarantee='none' source_objective=0.7586899562248193 transformed=True settings={'num_reads': 1, 'num_sweeps': 3426, 'seed': 7}"
+    }
+  ],
+  "actions": [
+    "reuse",
+    "reuse",
+    "reuse",
+    "recycle",
+    "recycle",
+    "recycle",
+    "reuse",
+    "recycle",
+    "reuse",
+    "recycle",
+    "reuse",
+    "recycle",
+    "recycle",
+    "recycle",
+    "test",
+    "recycle",
+    "recycle",
+    "recycle",
+    "recycle",
+    "test",
+    "recycle",
+    "recycle",
+    "recycle",
+    "test",
+    "reuse",
+    "reuse",
+    "recycle",
+    "reuse",
+    "reuse",
+    "reuse",
+    "recycle",
+    "test",
+    "reuse"
+  ],
+  "packs": [
+    [
+      1,
+      8,
+      25,
+      28
+    ],
+    [
+      0,
+      2,
+      6,
+      10
+    ],
+    [
+      24,
+      27,
+      29,
+      32
+    ]
+  ],
+  "summary": "33 batteries, 3 packs, solved by QpiAI Opt local MILP (exact), objective 4.987"
+}

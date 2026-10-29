@@ -1,0 +1,46 @@
+{
+  "run_id": "1030-024604-dbca",
+  "kind": "sdk_verify",
+  "timestamp": "2026-10-30T02:46:04",
+  "backend": "QpiAI QCloud SDK + QpiAI Opt",
+  "passed": 7,
+  "total": 7,
+  "checks": [
+    {
+      "check": "QpiAI SDK kernel (batch 1) reproduces the recorded kernel",
+      "pass": true,
+      "detail": "max |difference| 2.34e-04 (recorded to 4 decimals, angles to 4 decimals)"
+    },
+    {
+      "check": "NumPy training twin equals the QpiAI SDK circuit",
+      "pass": true,
+      "detail": "max |difference| 2.66e-15"
+    },
+    {
+      "check": "Recorded shot-based fidelity circuits agree with exact overlaps",
+      "pass": true,
+      "detail": "mean |shots - exact| 0.0066 over 60 circuits, 2000 shots"
+    },
+    {
+      "check": "QpiAI Opt re-solves batch 1 to the recorded objective",
+      "pass": true,
+      "detail": "now 515.8182 vs recorded 515.8223 (solved by QpiAI Opt local MILP (exact))"
+    },
+    {
+      "check": "QpiAI Opt exact MILP matches the HiGHS reference",
+      "pass": true,
+      "detail": "QpiAI Opt 515.818164 vs HiGHS 515.818164"
+    },
+    {
+      "check": "QpiAI Opt market matching reproduces the recorded total score",
+      "pass": true,
+      "detail": "now 4.6424 vs recorded 4.6424"
+    },
+    {
+      "check": "Evidence log present",
+      "pass": true,
+      "detail": "165 run records in artifacts/evidence/"
+    }
+  ],
+  "summary": "SDK verify: 7/7 checks passed"
+}

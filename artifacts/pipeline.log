@@ -1,0 +1,71 @@
+[00:59:53] sponsor status: {"qpiai_quantum_version": "0.3.0", "qcloud_key_configured": true, "opt_key_configured": true, "kernel_device": "QpiAI-QSV-Local", "qaoa_device": "QpiAI-QSV-Local", "opt_solver": "QpiAI Opt local solver"}
+[00:59:56] data: 8753 snapshots from 124 cells, 58% fit; excluded {'invalid_cycle_records': 78, 'snapshots_without_enough_history': 0}
+[00:59:56] cross-validation by cell: XGBoost and AQSVC side by side, plus baselines...
+[00:59:56] fold 1/5: 99 training cells, 25 test cells
+[01:01:15]     AQSVC feature maps tuned: 8 inputs -> validation accuracy 0.954, 7 inputs -> validation accuracy 0.955
+[01:01:34]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 3.1 s each
+[01:01:54]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 3.1 s each
+[01:02:15]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 3.2 s each
+[01:02:34]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 3.1 s each
+[01:02:42]   fold 1 accuracy: rule 0.789, xgb_small 0.953, svc_rbf 0.917, xgb 0.952, qsvc 0.952, aqsvc 0.950
+[01:02:42] fold 2/5: 99 training cells, 25 test cells
+[01:03:55]     AQSVC feature maps tuned: 8 inputs -> validation accuracy 0.955, 7 inputs -> validation accuracy 0.957
+[01:05:41]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 20.5 s each
+[01:06:21]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 6.5 s each
+[01:07:44]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 15.6 s each
+[01:08:04]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 3.2 s each
+[01:08:12]   fold 2 accuracy: rule 0.834, xgb_small 0.928, svc_rbf 0.889, xgb 0.930, qsvc 0.941, aqsvc 0.944
+[01:08:12] fold 3/5: 99 training cells, 25 test cells
+[01:09:46]     AQSVC feature maps tuned: 8 inputs -> validation accuracy 0.961, 7 inputs -> validation accuracy 0.932
+[01:11:48]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 23.1 s each
+[01:13:44]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 21.9 s each
+[01:15:34]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 20.7 s each
+[01:17:23]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 21.0 s each
+[01:17:30]   fold 3 accuracy: rule 0.793, xgb_small 0.930, svc_rbf 0.906, xgb 0.943, qsvc 0.951, aqsvc 0.954
+[01:17:30] fold 4/5: 100 training cells, 24 test cells
+[01:18:42]     AQSVC feature maps tuned: 8 inputs -> validation accuracy 0.943, 7 inputs -> validation accuracy 0.936
+[01:20:04]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 15.7 s each
+[01:22:00]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 21.7 s each
+[01:23:54]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 21.2 s each
+[01:26:02]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 24.4 s each
+[01:26:28]   fold 4 accuracy: rule 0.807, xgb_small 0.959, svc_rbf 0.928, xgb 0.958, qsvc 0.946, aqsvc 0.945
+[01:26:28] fold 5/5: 99 training cells, 25 test cells
+[01:30:33]     AQSVC feature maps tuned: 8 inputs -> validation accuracy 0.964, 7 inputs -> validation accuracy 0.939
+[01:32:39]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 24.3 s each
+[01:34:44]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 23.6 s each
+[01:36:53]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 24.3 s each
+[01:38:59]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 23.9 s each
+[01:39:20]   fold 5 accuracy: rule 0.825, xgb_small 0.962, svc_rbf 0.904, xgb 0.965, qsvc 0.954, aqsvc 0.960
+[01:39:20] usage baselines: stop-period + application-confidence models (grouped 5-fold CV)...
+[01:39:54]   usage models fold 1/5 (34 s)
+[01:40:20]   usage models fold 2/5 (60 s)
+[01:40:43]   usage models fold 3/5 (83 s)
+[01:41:06]   usage models fold 4/5 (106 s)
+[01:41:11]   usage models fold 5/5 (111 s)
+[01:41:15]   rule       acc 0.810  auc 0.802  false-fit 0.244  3.1 s
+[01:41:15]   xgb_small  acc 0.946  auc 0.991  false-fit 0.040  4.5 s
+[01:41:15]   svc_rbf    acc 0.909  auc 0.966  false-fit 0.164  1.1 s
+[01:41:15]   xgb        acc 0.950  auc 0.992  false-fit 0.044  5.5 s
+[01:41:15]   qsvc       acc 0.949  auc 0.989  false-fit 0.056  38.8 s
+[01:41:15]   aqsvc      acc 0.951  auc 0.990  false-fit 0.059  2304.5 s
+[01:41:17] fleet: 5000 batteries in 152 batches of ~33 distinct cells
+[01:41:18] QpiAI Opt allocation: 272 batch problems (CELLFEE plan on all 152 batches; 6 comparison variants on the first 20)...
+[01:46:33]   50/272 batch problems solved (315 s)
+[01:51:44]   100/272 batch problems solved (626 s)
+[01:56:33]   150/272 batch problems solved (915 s)
+[01:57:38]   200/272 batch problems solved (980 s)
+[01:58:54]   250/272 batch problems solved (1057 s)
+[01:59:33]   272/272 batch problems solved (1095 s)
+[01:59:35]   solved in 1097 s
+[01:59:41] batch 1 kernel on QpiAI SDK (33 batteries)...
+[01:59:41] shot-based fidelity test: 60 circuits on QpiAI-QSV-Local...
+[01:59:44] QAOA pack balancing on 8 cells of batch 1...
+[02:00:00] final XGBoost + AQSVC on all snapshots (trained side by side)...
+[02:03:33]     AQSVC feature maps tuned: 8 inputs -> validation accuracy 0.956, 7 inputs -> validation accuracy 0.957
+[02:05:42]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 24.7 s each
+[02:07:58]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 25.4 s each
+[02:09:20]     AQSVC bagging: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 15.1 s each
+[02:09:39]     AQSVC boosting: 25 QUBOs on QpiAI Opt local QUBO annealer, mean 3.0 s each
+[02:09:41] support-vector states for live use, 8-input map: 1095 circuits on QpiAI SDK...
+[02:09:44] support-vector states for live use, 7-input map: 1082 circuits on QpiAI SDK...
+[02:09:47] done in 4195.6 s -> C:\Users\Gagan R\OneDrive\Desktop\CELLFEE\cellfee\artifacts\results.json (5000 batteries)

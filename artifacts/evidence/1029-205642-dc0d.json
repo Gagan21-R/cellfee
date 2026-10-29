@@ -1,0 +1,18 @@
+{
+  "run_id": "1029-205642-dc0d",
+  "kind": "upload_screening",
+  "timestamp": "2026-10-29T20:56:42",
+  "backend": "XGBoost + AQSVC (deployed) + usage-baseline models",
+  "file": "cellfee-passport-RB-0001.json",
+  "layout": "screening summary",
+  "outputs": [
+    {
+      "battery_id": "RB-0001",
+      "grade": "A",
+      "state": "Safe",
+      "risk": "Low",
+      "best_app": "emergency_light"
+    }
+  ],
+  "summary": "upload cellfee-passport-RB-0001.json: 1 screened"
+}

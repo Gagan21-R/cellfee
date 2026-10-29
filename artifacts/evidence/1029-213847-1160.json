@@ -1,0 +1,18 @@
+{
+  "run_id": "1029-213847-1160",
+  "kind": "upload_screening",
+  "timestamp": "2026-10-29T21:38:47",
+  "backend": "XGBoost + AQSVC (deployed) + usage-baseline models",
+  "file": "CELLFEE_single_battery_test_report_sample (1).pdf",
+  "layout": "screening summary",
+  "outputs": [
+    {
+      "battery_id": "EVB-KA-2048",
+      "grade": "T",
+      "state": "Safe",
+      "risk": "High",
+      "best_app": "traffic_cctv"
+    }
+  ],
+  "summary": "upload CELLFEE_single_battery_test_report_sample (1).pdf: 1 screened"
+}

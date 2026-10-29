@@ -1,0 +1,19 @@
+{
+  "run_id": "1029-181333-11d4",
+  "kind": "fleet_allocation",
+  "timestamp": "2026-10-29T18:13:33",
+  "backend": "QpiAI Opt local MILP + HiGHS",
+  "label": "both",
+  "realized_value": 944.114,
+  "unfit_reused": 14,
+  "reused": 1808,
+  "tested": 889,
+  "good_cells_recycled": 341,
+  "mean_pack_health_spread": 0.0093,
+  "forbidden_assignments": 0,
+  "objective": 896.764,
+  "all_feasible": true,
+  "proven_optimal_batches": 11,
+  "batches_scored": 152,
+  "summary": "both: 152 batches, value $944.11, 0 forbidden assignments"
+}

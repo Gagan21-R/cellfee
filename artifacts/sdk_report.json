@@ -1,0 +1,1497 @@
+{
+  "generated": "2026-10-30 02:43:56",
+  "status": {
+    "ok": true,
+    "qpiai_quantum_version": "0.3.0",
+    "qcloud_key_configured": true,
+    "opt_key_configured": true,
+    "kernel_device": "QpiAI-QSV-Local",
+    "qaoa_device": "QpiAI-QSV-Local",
+    "opt_solver": "QpiAI Opt local solver",
+    "qpiai_opt_version": "installed",
+    "opt_client_ready": true,
+    "wall_seconds": 2.73
+  },
+  "kernel": {
+    "ok": true,
+    "exact_statevector": 0.002764652426181647,
+    "shot_estimate": 0.005,
+    "shots": 2000,
+    "device": "QpiAI-QSV-Local",
+    "notes": [],
+    "job_ids": [],
+    "twin_difference": 1.721713049906981e-16,
+    "circuit": {
+      "qubits": 7,
+      "layers": 2
+    },
+    "evidence_id": "1030-024402-24e1",
+    "wall_seconds": 3.35
+  },
+  "train_qubo_svm": {
+    "ok": true,
+    "solver": "QpiAI Opt local QUBO annealer",
+    "qubo_variables": 80,
+    "reads": 4,
+    "sweeps": 366,
+    "seconds": 3.92,
+    "energy_qpiai_opt": -6.764813706438585,
+    "energy_builtin_annealer": -9.002805996813333,
+    "support_vectors": 23,
+    "held_out_accuracy_qubo": 0.836,
+    "held_out_accuracy_classical_svc": 0.86,
+    "held_out_snapshots": 500,
+    "evidence_id": "1030-024410-4e07",
+    "wall_seconds": 7.96
+  },
+  "screen": {
+    "ok": true,
+    "p_xgb": 0.23861905932426453,
+    "p_aqsvc": 0.12192991648577241,
+    "aqsvc_votes": "46 of 100",
+    "grade": "C",
+    "suggested_action": "recycle",
+    "circuit": {
+      "qubits": 7,
+      "depth": 18,
+      "gates": 42,
+      "device": "QpiAI-QSV-Local"
+    },
+    "nearest_fleet_batteries": [
+      {
+        "id": "RB-1873",
+        "similarity": 0.95,
+        "action": "recycle"
+      },
+      {
+        "id": "RB-1444",
+        "similarity": 0.94,
+        "action": "recycle"
+      },
+      {
+        "id": "RB-1906",
+        "similarity": 0.929,
+        "action": "recycle"
+      }
+    ],
+    "seconds": 2.55,
+    "evidence_id": "1030-024413-7653",
+    "wall_seconds": 2.99
+  },
+  "allocate": {
+    "ok": true,
+    "batteries": 33,
+    "solved_by": "QpiAI Opt local MILP (exact)",
+    "objective": 515.8181638011488,
+    "solver_runs": [
+      {
+        "solver": "Exact MILP (HiGHS)",
+        "objective": 515.818163801149,
+        "optimal": true,
+        "seconds": 25.99
+      },
+      {
+        "solver": "QpiAI Opt local MILP (exact)",
+        "objective": 515.8181638011488,
+        "optimal": false,
+        "seconds": 24.89
+      },
+      {
+        "solver": "QpiAI Opt local QUBO annealer (free-tier budget)",
+        "objective": 200.9334773912418,
+        "optimal": null,
+        "seconds": 2.92
+      }
+    ],
+    "packs": [
+      [
+        "RB-0013",
+        "RB-0014",
+        "RB-0025",
+        "RB-0026"
+      ],
+      [
+        "RB-0004",
+        "RB-0009",
+        "RB-0010",
+        "RB-0016"
+      ],
+      [
+        "RB-0017",
+        "RB-0018",
+        "RB-0021",
+        "RB-0024"
+      ]
+    ],
+    "actions": {
+      "RB-0001": "test",
+      "RB-0002": "test",
+      "RB-0003": "recycle",
+      "RB-0004": "reuse",
+      "RB-0005": "test",
+      "RB-0006": "test",
+      "RB-0007": "recycle",
+      "RB-0008": "recycle",
+      "RB-0009": "reuse",
+      "RB-0010": "reuse",
+      "RB-0011": "test",
+      "RB-0012": "recycle",
+      "RB-0013": "reuse",
+      "RB-0014": "reuse",
+      "RB-0015": "recycle",
+      "RB-0016": "reuse",
+      "RB-0017": "reuse",
+      "RB-0018": "reuse",
+      "RB-0019": "recycle",
+      "RB-0020": "recycle",
+      "RB-0021": "reuse",
+      "RB-0022": "recycle",
+      "RB-0023": "test",
+      "RB-0024": "reuse",
+      "RB-0025": "reuse",
+      "RB-0026": "reuse",
+      "RB-0027": "recycle",
+      "RB-0028": "recycle",
+      "RB-0029": "recycle",
+      "RB-0030": "recycle",
+      "RB-0031": "recycle",
+      "RB-0032": "recycle",
+      "RB-0033": "recycle"
+    },
+    "feasible": true,
+    "qubo": {
+      "variables": 168,
+      "terms": 3268,
+      "decision_variables": 165
+    },
+    "evidence_id": "1030-024508-b0ee",
+    "wall_seconds": 54.53
+  },
+  "qaoa": {
+    "ok": true,
+    "cells": [
+      "RB-0017",
+      "RB-0018",
+      "RB-0021",
+      "RB-0024",
+      "RB-0013",
+      "RB-0014",
+      "RB-0025",
+      "RB-0026"
+    ],
+    "qubits": 8,
+    "qubo_terms": 64,
+    "solver": "XY-mixer QAOA (p=3, CVaR \u03b1=0.25) on QpiAI QCloud circuits",
+    "device": "QpiAI-QSV-Local",
+    "optimal_probability": 0.05975,
+    "random_guess_optimal_probability": 0.02857142857142857,
+    "approximation_ratio": 1.0,
+    "exact_optimum": {
+      "objective": 1.202750000000001,
+      "assignment": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "feasible_states": 35
+    },
+    "evidence_id": "1030-024512-15fb",
+    "wall_seconds": 4.76
+  },
+  "match": {
+    "ok": true,
+    "solver": "QpiAI Opt local solver",
+    "pairs_screened": [
+      {
+        "listing": "PACK-441",
+        "buyer": "BUY-01",
+        "compatible": true,
+        "score": 0.5367,
+        "reasons": [
+          "weakest cell health 0.922 meets 0.88",
+          "0% confidence for Solar home storage (weakest member)",
+          "13.4 Wh \u2265 11 Wh",
+          "10 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 10
+      },
+      {
+        "listing": "PACK-441",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.702,
+        "reasons": [
+          "weakest cell health 0.922 meets 0.84",
+          ">99% confidence for Telecom / UPS backup (weakest member)",
+          "13.4 Wh \u2265 10 Wh",
+          "214 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 214
+      },
+      {
+        "listing": "PACK-441",
+        "buyer": "BUY-03",
+        "compatible": true,
+        "score": 0.4928,
+        "reasons": [
+          "weakest cell health 0.922 meets 0.92",
+          "0% confidence for Light mobility (e-rickshaw / e-cycle) (weakest member)",
+          "13.4 Wh \u2265 13 Wh",
+          "955 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 955
+      },
+      {
+        "listing": "PACK-441",
+        "buyer": "BUY-04",
+        "compatible": true,
+        "score": 0.6822,
+        "reasons": [
+          "weakest cell health 0.922 meets 0.8",
+          "95% confidence for Street-light / IoT node (weakest member)",
+          "13.4 Wh \u2265 6 Wh",
+          "157 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 157
+      },
+      {
+        "listing": "PACK-441",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.6304,
+        "reasons": [
+          "weakest cell health 0.922 meets 0.84",
+          "74% confidence for Microgrid / rural electrification (weakest member)",
+          "13.4 Wh \u2265 11 Wh",
+          "1240 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 1240
+      },
+      {
+        "listing": "PACK-441",
+        "buyer": "BUY-06",
+        "compatible": true,
+        "score": 0.7049,
+        "reasons": [
+          "weakest cell health 0.922 meets 0.84",
+          ">99% confidence for Cold-chain & storage backup (weakest member)",
+          "13.4 Wh \u2265 10 Wh",
+          "806 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 806
+      },
+      {
+        "listing": "PACK-441",
+        "buyer": "BUY-07",
+        "compatible": true,
+        "score": 0.5139,
+        "reasons": [
+          "weakest cell health 0.922 meets 0.92",
+          "1% confidence for Data-centre / server UPS (weakest member)",
+          "13.4 Wh \u2265 13 Wh",
+          "657 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 657
+      },
+      {
+        "listing": "PACK-267",
+        "buyer": "BUY-01",
+        "compatible": true,
+        "score": 0.542,
+        "reasons": [
+          "weakest cell health 0.948 meets 0.88",
+          "1% confidence for Solar home storage (weakest member)",
+          "13.8 Wh \u2265 11 Wh",
+          "10 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 10
+      },
+      {
+        "listing": "PACK-267",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.7053,
+        "reasons": [
+          "weakest cell health 0.948 meets 0.84",
+          ">99% confidence for Telecom / UPS backup (weakest member)",
+          "13.8 Wh \u2265 10 Wh",
+          "214 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 214
+      },
+      {
+        "listing": "PACK-267",
+        "buyer": "BUY-03",
+        "compatible": true,
+        "score": 0.4973,
+        "reasons": [
+          "weakest cell health 0.948 meets 0.92",
+          "0% confidence for Light mobility (e-rickshaw / e-cycle) (weakest member)",
+          "13.8 Wh \u2265 13 Wh",
+          "955 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 955
+      },
+      {
+        "listing": "PACK-267",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.948 meets 0.8",
+          "95% confidence for Street-light / IoT node (weakest member)",
+          "13.8 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "price \u20b9103 over budget \u20b9100"
+        ],
+        "missing": [],
+        "distance_km": 157
+      },
+      {
+        "listing": "PACK-267",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.6331,
+        "reasons": [
+          "weakest cell health 0.948 meets 0.84",
+          "73% confidence for Microgrid / rural electrification (weakest member)",
+          "13.8 Wh \u2265 11 Wh",
+          "1240 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 1240
+      },
+      {
+        "listing": "PACK-267",
+        "buyer": "BUY-06",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.948 meets 0.84",
+          "13.8 Wh \u2265 10 Wh"
+        ],
+        "blockers": [
+          "pack not qualified for Cold-chain & storage backup (a member fails its usage baseline)"
+        ],
+        "missing": [],
+        "distance_km": 806
+      },
+      {
+        "listing": "PACK-267",
+        "buyer": "BUY-07",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.948 meets 0.92",
+          "13.8 Wh \u2265 13 Wh"
+        ],
+        "blockers": [
+          "pack not qualified for Data-centre / server UPS (a member fails its usage baseline)"
+        ],
+        "missing": [],
+        "distance_km": 657
+      },
+      {
+        "listing": "PACK-135",
+        "buyer": "BUY-01",
+        "compatible": true,
+        "score": 0.5422,
+        "reasons": [
+          "weakest cell health 0.957 meets 0.88",
+          "0% confidence for Solar home storage (weakest member)",
+          "13.9 Wh \u2265 11 Wh",
+          "10 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 10
+      },
+      {
+        "listing": "PACK-135",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.7056,
+        "reasons": [
+          "weakest cell health 0.957 meets 0.84",
+          ">99% confidence for Telecom / UPS backup (weakest member)",
+          "13.9 Wh \u2265 10 Wh",
+          "214 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 214
+      },
+      {
+        "listing": "PACK-135",
+        "buyer": "BUY-03",
+        "compatible": true,
+        "score": 0.4979,
+        "reasons": [
+          "weakest cell health 0.957 meets 0.92",
+          "0% confidence for Light mobility (e-rickshaw / e-cycle) (weakest member)",
+          "13.9 Wh \u2265 13 Wh",
+          "955 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 955
+      },
+      {
+        "listing": "PACK-135",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.957 meets 0.8",
+          "99% confidence for Street-light / IoT node (weakest member)",
+          "13.9 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "price \u20b9104 over budget \u20b9100"
+        ],
+        "missing": [],
+        "distance_km": 157
+      },
+      {
+        "listing": "PACK-135",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.6868,
+        "reasons": [
+          "weakest cell health 0.957 meets 0.84",
+          "99% confidence for Microgrid / rural electrification (weakest member)",
+          "13.9 Wh \u2265 11 Wh",
+          "1240 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 1240
+      },
+      {
+        "listing": "PACK-135",
+        "buyer": "BUY-06",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.957 meets 0.84",
+          "13.9 Wh \u2265 10 Wh"
+        ],
+        "blockers": [
+          "pack not qualified for Cold-chain & storage backup (a member fails its usage baseline)"
+        ],
+        "missing": [],
+        "distance_km": 806
+      },
+      {
+        "listing": "PACK-135",
+        "buyer": "BUY-07",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.957 meets 0.92",
+          "13.9 Wh \u2265 13 Wh"
+        ],
+        "blockers": [
+          "pack not qualified for Data-centre / server UPS (a member fails its usage baseline)"
+        ],
+        "missing": [],
+        "distance_km": 657
+      },
+      {
+        "listing": "PACK-284",
+        "buyer": "BUY-01",
+        "compatible": true,
+        "score": 0.5425,
+        "reasons": [
+          "weakest cell health 0.965 meets 0.88",
+          "0% confidence for Solar home storage (weakest member)",
+          "14.0 Wh \u2265 11 Wh",
+          "10 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 10
+      },
+      {
+        "listing": "PACK-284",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.706,
+        "reasons": [
+          "weakest cell health 0.965 meets 0.84",
+          ">99% confidence for Telecom / UPS backup (weakest member)",
+          "14.0 Wh \u2265 10 Wh",
+          "214 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 214
+      },
+      {
+        "listing": "PACK-284",
+        "buyer": "BUY-03",
+        "compatible": true,
+        "score": 0.4985,
+        "reasons": [
+          "weakest cell health 0.965 meets 0.92",
+          "0% confidence for Light mobility (e-rickshaw / e-cycle) (weakest member)",
+          "14.0 Wh \u2265 13 Wh",
+          "955 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 955
+      },
+      {
+        "listing": "PACK-284",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.965 meets 0.8",
+          "99% confidence for Street-light / IoT node (weakest member)",
+          "14.0 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "price \u20b9105 over budget \u20b9100"
+        ],
+        "missing": [],
+        "distance_km": 157
+      },
+      {
+        "listing": "PACK-284",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.6639,
+        "reasons": [
+          "weakest cell health 0.965 meets 0.84",
+          "87% confidence for Microgrid / rural electrification (weakest member)",
+          "14.0 Wh \u2265 11 Wh",
+          "1240 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 1240
+      },
+      {
+        "listing": "PACK-284",
+        "buyer": "BUY-06",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.965 meets 0.84",
+          "14.0 Wh \u2265 10 Wh"
+        ],
+        "blockers": [
+          "pack not qualified for Cold-chain & storage backup (a member fails its usage baseline)"
+        ],
+        "missing": [],
+        "distance_km": 806
+      },
+      {
+        "listing": "PACK-284",
+        "buyer": "BUY-07",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.965 meets 0.92",
+          "14.0 Wh \u2265 13 Wh"
+        ],
+        "blockers": [
+          "pack not qualified for Data-centre / server UPS (a member fails its usage baseline)"
+        ],
+        "missing": [],
+        "distance_km": 657
+      },
+      {
+        "listing": "PACK-031",
+        "buyer": "BUY-01",
+        "compatible": true,
+        "score": 0.5848,
+        "reasons": [
+          "weakest cell health 0.972 meets 0.88",
+          "20% confidence for Solar home storage (weakest member)",
+          "14.2 Wh \u2265 11 Wh",
+          "10 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 10
+      },
+      {
+        "listing": "PACK-031",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.7086,
+        "reasons": [
+          "weakest cell health 0.972 meets 0.84",
+          ">99% confidence for Telecom / UPS backup (weakest member)",
+          "14.2 Wh \u2265 10 Wh",
+          "214 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 214
+      },
+      {
+        "listing": "PACK-031",
+        "buyer": "BUY-03",
+        "compatible": true,
+        "score": 0.5077,
+        "reasons": [
+          "weakest cell health 0.972 meets 0.92",
+          "3% confidence for Light mobility (e-rickshaw / e-cycle) (weakest member)",
+          "14.2 Wh \u2265 13 Wh",
+          "955 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 955
+      },
+      {
+        "listing": "PACK-031",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.972 meets 0.8",
+          ">99% confidence for Street-light / IoT node (weakest member)",
+          "14.2 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "price \u20b9106 over budget \u20b9100"
+        ],
+        "missing": [],
+        "distance_km": 157
+      },
+      {
+        "listing": "PACK-031",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.6914,
+        "reasons": [
+          "weakest cell health 0.972 meets 0.84",
+          ">99% confidence for Microgrid / rural electrification (weakest member)",
+          "14.2 Wh \u2265 11 Wh",
+          "1240 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 1240
+      },
+      {
+        "listing": "PACK-031",
+        "buyer": "BUY-06",
+        "compatible": true,
+        "score": 0.7144,
+        "reasons": [
+          "weakest cell health 0.972 meets 0.84",
+          ">99% confidence for Cold-chain & storage backup (weakest member)",
+          "14.2 Wh \u2265 10 Wh",
+          "806 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 806
+      },
+      {
+        "listing": "PACK-031",
+        "buyer": "BUY-07",
+        "compatible": true,
+        "score": 0.7201,
+        "reasons": [
+          "weakest cell health 0.972 meets 0.92",
+          ">99% confidence for Data-centre / server UPS (weakest member)",
+          "14.2 Wh \u2265 13 Wh",
+          "657 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 657
+      },
+      {
+        "listing": "PACK-001",
+        "buyer": "BUY-01",
+        "compatible": true,
+        "score": 0.5513,
+        "reasons": [
+          "weakest cell health 0.985 meets 0.88",
+          "3% confidence for Solar home storage (weakest member)",
+          "14.3 Wh \u2265 11 Wh",
+          "10 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 10
+      },
+      {
+        "listing": "PACK-001",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.709,
+        "reasons": [
+          "weakest cell health 0.985 meets 0.84",
+          ">99% confidence for Telecom / UPS backup (weakest member)",
+          "14.3 Wh \u2265 10 Wh",
+          "214 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 214
+      },
+      {
+        "listing": "PACK-001",
+        "buyer": "BUY-03",
+        "compatible": true,
+        "score": 0.5039,
+        "reasons": [
+          "weakest cell health 0.985 meets 0.92",
+          "1% confidence for Light mobility (e-rickshaw / e-cycle) (weakest member)",
+          "14.3 Wh \u2265 13 Wh",
+          "955 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 955
+      },
+      {
+        "listing": "PACK-001",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.985 meets 0.8",
+          ">99% confidence for Street-light / IoT node (weakest member)",
+          "14.3 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "price \u20b9107 over budget \u20b9100"
+        ],
+        "missing": [],
+        "distance_km": 157
+      },
+      {
+        "listing": "PACK-001",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.6919,
+        "reasons": [
+          "weakest cell health 0.985 meets 0.84",
+          ">99% confidence for Microgrid / rural electrification (weakest member)",
+          "14.3 Wh \u2265 11 Wh",
+          "1240 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 1240
+      },
+      {
+        "listing": "PACK-001",
+        "buyer": "BUY-06",
+        "compatible": true,
+        "score": 0.715,
+        "reasons": [
+          "weakest cell health 0.985 meets 0.84",
+          ">99% confidence for Cold-chain & storage backup (weakest member)",
+          "14.3 Wh \u2265 10 Wh",
+          "806 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 806
+      },
+      {
+        "listing": "PACK-001",
+        "buyer": "BUY-07",
+        "compatible": true,
+        "score": 0.7209,
+        "reasons": [
+          "weakest cell health 0.985 meets 0.92",
+          ">99% confidence for Data-centre / server UPS (weakest member)",
+          "14.3 Wh \u2265 13 Wh",
+          "657 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [],
+        "distance_km": 657
+      },
+      {
+        "listing": "LST-11",
+        "buyer": "BUY-01",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "11.6 Wh \u2265 11 Wh"
+        ],
+        "blockers": [
+          "weakest cell health 0.84 < 0.88 required for Solar home storage"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 157
+      },
+      {
+        "listing": "LST-11",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.6416,
+        "reasons": [
+          "weakest cell health 0.84 meets 0.84",
+          "11.6 Wh \u2265 10 Wh",
+          "182 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 182
+      },
+      {
+        "listing": "LST-11",
+        "buyer": "BUY-03",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "weakest cell health 0.84 < 0.92 required for Light mobility (e-rickshaw / e-cycle)",
+          "energy 11.6 Wh < 13 Wh needed"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1099
+      },
+      {
+        "listing": "LST-11",
+        "buyer": "BUY-04",
+        "compatible": true,
+        "score": 0.687,
+        "reasons": [
+          "weakest cell health 0.84 meets 0.8",
+          "11.6 Wh \u2265 6 Wh",
+          "10 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 10
+      },
+      {
+        "listing": "LST-11",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.6182,
+        "reasons": [
+          "weakest cell health 0.84 meets 0.84",
+          "11.6 Wh \u2265 11 Wh",
+          "1196 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1196
+      },
+      {
+        "listing": "LST-11",
+        "buyer": "BUY-06",
+        "compatible": true,
+        "score": 0.6343,
+        "reasons": [
+          "weakest cell health 0.84 meets 0.84",
+          "11.6 Wh \u2265 10 Wh",
+          "894 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 894
+      },
+      {
+        "listing": "LST-11",
+        "buyer": "BUY-07",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "weakest cell health 0.84 < 0.92 required for Data-centre / server UPS",
+          "energy 11.6 Wh < 13 Wh needed"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 808
+      },
+      {
+        "listing": "LST-12",
+        "buyer": "BUY-01",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.92 meets 0.88",
+          "13.4 Wh \u2265 11 Wh"
+        ],
+        "blockers": [
+          "price \u20b9200 over budget \u20b9170"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 214
+      },
+      {
+        "listing": "LST-12",
+        "buyer": "BUY-02",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.92 meets 0.84",
+          "13.4 Wh \u2265 10 Wh"
+        ],
+        "blockers": [
+          "price \u20b9200 over budget \u20b9125"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 10
+      },
+      {
+        "listing": "LST-12",
+        "buyer": "BUY-03",
+        "compatible": true,
+        "score": 0.5333,
+        "reasons": [
+          "weakest cell health 0.92 meets 0.92",
+          "13.4 Wh \u2265 13 Wh",
+          "1144 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1144
+      },
+      {
+        "listing": "LST-12",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.92 meets 0.8",
+          "13.4 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "price \u20b9200 over budget \u20b9100"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 182
+      },
+      {
+        "listing": "LST-12",
+        "buyer": "BUY-05",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.92 meets 0.84",
+          "13.4 Wh \u2265 11 Wh"
+        ],
+        "blockers": [
+          "price \u20b9200 over budget \u20b9180"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1033
+      },
+      {
+        "listing": "LST-12",
+        "buyer": "BUY-06",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.92 meets 0.84",
+          "13.4 Wh \u2265 10 Wh"
+        ],
+        "blockers": [
+          "price \u20b9200 over budget \u20b9150"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 736
+      },
+      {
+        "listing": "LST-12",
+        "buyer": "BUY-07",
+        "compatible": true,
+        "score": 0.5609,
+        "reasons": [
+          "weakest cell health 0.92 meets 0.92",
+          "13.4 Wh \u2265 13 Wh",
+          "746 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 746
+      },
+      {
+        "listing": "LST-13",
+        "buyer": "BUY-01",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "critical health evidence missing",
+          "energy 9.0 Wh < 11 Wh needed",
+          "buyer requires a test report"
+        ],
+        "missing": [
+          "no health evidence",
+          "no application-confidence screening"
+        ],
+        "distance_km": 955
+      },
+      {
+        "listing": "LST-13",
+        "buyer": "BUY-02",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "critical health evidence missing",
+          "energy 9.0 Wh < 10 Wh needed"
+        ],
+        "missing": [
+          "no health evidence",
+          "no application-confidence screening"
+        ],
+        "distance_km": 1144
+      },
+      {
+        "listing": "LST-13",
+        "buyer": "BUY-03",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "critical health evidence missing",
+          "energy 9.0 Wh < 13 Wh needed",
+          "buyer requires a test report"
+        ],
+        "missing": [
+          "no health evidence",
+          "no application-confidence screening"
+        ],
+        "distance_km": 10
+      },
+      {
+        "listing": "LST-13",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "9.0 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "critical health evidence missing"
+        ],
+        "missing": [
+          "no health evidence",
+          "no application-confidence screening"
+        ],
+        "distance_km": 1099
+      },
+      {
+        "listing": "LST-13",
+        "buyer": "BUY-05",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "critical health evidence missing",
+          "energy 9.0 Wh < 11 Wh needed",
+          "buyer requires a test report"
+        ],
+        "missing": [
+          "no health evidence",
+          "no application-confidence screening"
+        ],
+        "distance_km": 2030
+      },
+      {
+        "listing": "LST-13",
+        "buyer": "BUY-06",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "critical health evidence missing",
+          "energy 9.0 Wh < 10 Wh needed"
+        ],
+        "missing": [
+          "no health evidence",
+          "no application-confidence screening"
+        ],
+        "distance_km": 1200
+      },
+      {
+        "listing": "LST-13",
+        "buyer": "BUY-07",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "critical health evidence missing",
+          "energy 9.0 Wh < 13 Wh needed",
+          "buyer requires a test report"
+        ],
+        "missing": [
+          "no health evidence",
+          "no application-confidence screening"
+        ],
+        "distance_km": 651
+      },
+      {
+        "listing": "LST-14",
+        "buyer": "BUY-01",
+        "compatible": true,
+        "score": 0.594,
+        "reasons": [
+          "weakest cell health 0.88 meets 0.88",
+          "12.5 Wh \u2265 11 Wh",
+          "1188 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1188
+      },
+      {
+        "listing": "LST-14",
+        "buyer": "BUY-02",
+        "compatible": true,
+        "score": 0.5545,
+        "reasons": [
+          "weakest cell health 0.88 meets 0.84",
+          "12.5 Wh \u2265 10 Wh",
+          "1344 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1344
+      },
+      {
+        "listing": "LST-14",
+        "buyer": "BUY-03",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "weakest cell health 0.88 < 0.92 required for Light mobility (e-rickshaw / e-cycle)",
+          "energy 12.5 Wh < 13 Wh needed"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 378
+      },
+      {
+        "listing": "LST-14",
+        "buyer": "BUY-04",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "weakest cell health 0.88 meets 0.8",
+          "12.5 Wh \u2265 6 Wh"
+        ],
+        "blockers": [
+          "price \u20b9110 over budget \u20b9100"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1343
+      },
+      {
+        "listing": "LST-14",
+        "buyer": "BUY-05",
+        "compatible": true,
+        "score": 0.5624,
+        "reasons": [
+          "weakest cell health 0.88 meets 0.84",
+          "12.5 Wh \u2265 11 Wh",
+          "2089 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 2089
+      },
+      {
+        "listing": "LST-14",
+        "buyer": "BUY-06",
+        "compatible": true,
+        "score": 0.5994,
+        "reasons": [
+          "weakest cell health 0.88 meets 0.84",
+          "12.5 Wh \u2265 10 Wh",
+          "1178 km away, verified listing"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1178
+      },
+      {
+        "listing": "LST-14",
+        "buyer": "BUY-07",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "weakest cell health 0.88 < 0.92 required for Data-centre / server UPS",
+          "energy 12.5 Wh < 13 Wh needed"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 671
+      },
+      {
+        "listing": "LST-15",
+        "buyer": "BUY-01",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "11.0 Wh \u2265 11 Wh"
+        ],
+        "blockers": [
+          "weakest cell health 0.82 < 0.88 required for Solar home storage"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1524
+      },
+      {
+        "listing": "LST-15",
+        "buyer": "BUY-02",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "11.0 Wh \u2265 10 Wh"
+        ],
+        "blockers": [
+          "weakest cell health 0.82 < 0.84 required for Telecom / UPS backup"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1323
+      },
+      {
+        "listing": "LST-15",
+        "buyer": "BUY-03",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "weakest cell health 0.82 < 0.92 required for Light mobility (e-rickshaw / e-cycle)",
+          "energy 11.0 Wh < 13 Wh needed"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 2261
+      },
+      {
+        "listing": "LST-15",
+        "buyer": "BUY-04",
+        "compatible": true,
+        "score": 0.6004,
+        "reasons": [
+          "weakest cell health 0.82 meets 0.8",
+          "11.0 Wh \u2265 6 Wh",
+          "1491 km away, unverified: inspect first"
+        ],
+        "blockers": [],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1491
+      },
+      {
+        "listing": "LST-15",
+        "buyer": "BUY-05",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "11.0 Wh \u2265 11 Wh"
+        ],
+        "blockers": [
+          "weakest cell health 0.82 < 0.84 required for Microgrid / rural electrification"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 306
+      },
+      {
+        "listing": "LST-15",
+        "buyer": "BUY-06",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [
+          "11.0 Wh \u2265 10 Wh"
+        ],
+        "blockers": [
+          "weakest cell health 0.82 < 0.84 required for Cold-chain & storage backup"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1106
+      },
+      {
+        "listing": "LST-15",
+        "buyer": "BUY-07",
+        "compatible": false,
+        "score": 0.0,
+        "reasons": [],
+        "blockers": [
+          "weakest cell health 0.82 < 0.92 required for Data-centre / server UPS",
+          "energy 11.0 Wh < 13 Wh needed"
+        ],
+        "missing": [
+          "no application-confidence screening"
+        ],
+        "distance_km": 1631
+      }
+    ],
+    "compatible_pairs": 42,
+    "matches": [
+      [
+        "BUY-05",
+        "PACK-135",
+        0.6868
+      ],
+      [
+        "BUY-02",
+        "PACK-284",
+        0.706
+      ],
+      [
+        "BUY-06",
+        "PACK-031",
+        0.7144
+      ],
+      [
+        "BUY-07",
+        "PACK-001",
+        0.7209
+      ],
+      [
+        "BUY-04",
+        "LST-11",
+        0.687
+      ],
+      [
+        "BUY-03",
+        "LST-12",
+        0.5333
+      ],
+      [
+        "BUY-01",
+        "LST-14",
+        0.594
+      ]
+    ],
+    "total_score": 4.6424,
+    "evidence_id": "1030-024513-ed08",
+    "wall_seconds": 0.16
+  },
+  "verify": {
+    "ok": true,
+    "passed": 7,
+    "total": 7,
+    "checks": [
+      {
+        "check": "QpiAI SDK kernel (batch 1) reproduces the recorded kernel",
+        "pass": true,
+        "detail": "max |difference| 2.34e-04 (recorded to 4 decimals, angles to 4 decimals)"
+      },
+      {
+        "check": "NumPy training twin equals the QpiAI SDK circuit",
+        "pass": true,
+        "detail": "max |difference| 2.66e-15"
+      },
+      {
+        "check": "Recorded shot-based fidelity circuits agree with exact overlaps",
+        "pass": true,
+        "detail": "mean |shots - exact| 0.0066 over 60 circuits, 2000 shots"
+      },
+      {
+        "check": "QpiAI Opt re-solves batch 1 to the recorded objective",
+        "pass": true,
+        "detail": "now 515.8182 vs recorded 515.8223 (solved by QpiAI Opt local MILP (exact))"
+      },
+      {
+        "check": "QpiAI Opt exact MILP matches the HiGHS reference",
+        "pass": true,
+        "detail": "QpiAI Opt 515.818164 vs HiGHS 515.818164"
+      },
+      {
+        "check": "QpiAI Opt market matching reproduces the recorded total score",
+        "pass": true,
+        "detail": "now 4.6424 vs recorded 4.6424"
+      },
+      {
+        "check": "Evidence log present",
+        "pass": true,
+        "detail": "165 run records in artifacts/evidence/"
+      }
+    ],
+    "evidence_id": "1030-024604-dbca",
+    "wall_seconds": 51.61
+  }
+}

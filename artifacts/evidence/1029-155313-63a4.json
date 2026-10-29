@@ -1,0 +1,260 @@
+{
+  "run_id": "1029-155313-63a4",
+  "kind": "aqsvc_training",
+  "timestamp": "2026-10-29T15:53:13",
+  "backend": "QpiAI Opt (QUBO) + QpiAI QCloud feature-map kernel",
+  "label": "deployed model",
+  "members": [
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -3.907165334562466,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.39,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-3.907165334562458 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 107}",
+      "support_vectors": 10
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -24.358669940397434,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.73,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-24.358669940397508 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 108}",
+      "support_vectors": 23
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -22.78866613795161,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.97,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-22.78866613795162 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 109}",
+      "support_vectors": 19
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -16.141237080047784,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.38,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-16.141237080047794 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 110}",
+      "support_vectors": 17
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -12.688816247509394,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.87,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-12.688816247509376 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 111}",
+      "support_vectors": 16
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -18.89980598789252,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.85,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-18.89980598789252 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 112}",
+      "support_vectors": 19
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -23.535001607418884,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.66,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-23.535001607418913 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 113}",
+      "support_vectors": 22
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -23.24254666017067,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.85,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-23.242546660170706 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 114}",
+      "support_vectors": 21
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -22.520692571408283,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.63,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-22.52069257140828 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 115}",
+      "support_vectors": 15
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -14.21052786555475,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.46,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-14.210527865554749 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 116}",
+      "support_vectors": 19
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -22.31697665917639,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.09,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-22.31697665917638 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 117}",
+      "support_vectors": 21
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -9.538961884329382,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.62,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-9.53896188432938 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 118}",
+      "support_vectors": 11
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -18.859659301806012,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 11.45,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-18.85965930180601 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 119}",
+      "support_vectors": 22
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -20.141382395208744,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.22,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-20.141382395208737 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 120}",
+      "support_vectors": 22
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -15.63048945386156,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.88,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-15.630489453861548 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 121}",
+      "support_vectors": 18
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -16.86665373011888,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.61,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-16.86665373011888 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 122}",
+      "support_vectors": 17
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -39.50496206191143,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.92,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-39.50496206191138 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 123}",
+      "support_vectors": 27
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -18.049268855430412,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.01,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-18.049268855430405 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 124}",
+      "support_vectors": 18
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -22.305569660811457,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.75,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-22.305569660811432 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 125}",
+      "support_vectors": 18
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -21.18053423255855,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.2,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-21.18053423255855 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 126}",
+      "support_vectors": 21
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -7.418867125170536,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 10.32,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-7.418867125170531 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 127}",
+      "support_vectors": 12
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -26.739520887172702,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.05,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-26.739520887172702 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 128}",
+      "support_vectors": 24
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -12.290868606759034,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.98,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-12.290868606759032 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 129}",
+      "support_vectors": 14
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -24.212139646650254,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.43,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-24.212139646650243 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 130}",
+      "support_vectors": 20
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -32.73720104560468,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.25,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-32.73720104560469 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 131}",
+      "support_vectors": 27
+    }
+  ],
+  "summary": "25 AQSVC members trained as QUBOs (QpiAI Opt local QUBO annealer), 80 binary variables each"
+}

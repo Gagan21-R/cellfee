@@ -1,0 +1,51 @@
+{
+  "run_id": "1030-021552-7221",
+  "kind": "assessment",
+  "timestamp": "2026-10-30T02:15:52",
+  "backend": "XGBoost + AQSVC (deployed) + usage-baseline models",
+  "inputs": {
+    "soh": 0.95,
+    "fade_100": 0.008,
+    "ir_mohm": 16.0,
+    "ir_rise_100": 0.05,
+    "temp_max_c": 33.0,
+    "charge_time_min": 11.0,
+    "cycles": 250.0
+  },
+  "outputs": {
+    "grade": "A",
+    "action": "reuse",
+    "state": "Safe",
+    "risk": {
+      "score": 0.214,
+      "level": "Low",
+      "components": {
+        "health_margin": 0.0,
+        "fade_rate": 0.507,
+        "resistance_rise": 0.409,
+        "temperature": 0.0,
+        "model_doubt": 0.131
+      },
+      "tier_limit": 3
+    },
+    "best_app": "datacentre",
+    "confidence": {
+      "datacentre": 100.0,
+      "emergency_light": 100.0,
+      "home_ups": 100.0,
+      "backup": 100.0,
+      "traffic_cctv": 100.0,
+      "cold_chain": 99.9,
+      "solar_pump": 92.7,
+      "iot": 92.7,
+      "microgrid": 82.3,
+      "portable": 82.3,
+      "peak_shaving": 1.5,
+      "material_handling": 1.5,
+      "solar": 1.5,
+      "ev_buffer": 0.9,
+      "mobility": 0.9
+    }
+  },
+  "summary": "live assessment: grade A, Safe, risk Low"
+}

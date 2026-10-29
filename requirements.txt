@@ -1,0 +1,14 @@
+qpiai-quantum
+qpiai-opt[quantum]
+numpy
+scipy
+scikit-learn
+xgboost
+h5py
+fastapi
+uvicorn
+python-dotenv
+pypdf
+openpyxl
+rapidocr-onnxruntime
+httpx

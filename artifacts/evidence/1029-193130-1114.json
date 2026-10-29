@@ -1,0 +1,40 @@
+{
+  "run_id": "1029-193130-1114",
+  "kind": "assessment",
+  "timestamp": "2026-10-29T19:31:30",
+  "backend": "XGBoost + AQSVC (deployed) + usage-baseline models",
+  "inputs": {
+    "soh": 0.93,
+    "fade_100": 0.012,
+    "ir_mohm": 16.8,
+    "ir_rise_100": 0.1,
+    "temp_max_c": 37.0,
+    "charge_time_min": 10.5,
+    "cycles": 450.0
+  },
+  "outputs": {
+    "grade": "T",
+    "action": "test",
+    "state": "Safe",
+    "risk": {
+      "score": 0.402,
+      "level": "Elevated",
+      "components": {
+        "health_margin": 0.133,
+        "fade_rate": 0.607,
+        "resistance_rise": 0.53,
+        "temperature": 0.2,
+        "model_doubt": 0.539
+      },
+      "tier_limit": 2
+    },
+    "best_app": "emergency_light",
+    "confidence": {
+      "emergency_light": 100.0,
+      "traffic_cctv": 97.4,
+      "solar_pump": 27.1,
+      "iot": 27.1
+    }
+  },
+  "summary": "live assessment: grade T, Safe, risk Elevated"
+}

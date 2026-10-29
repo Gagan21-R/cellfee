@@ -1,0 +1,61 @@
+{
+  "run_id": "1029-012123-cebb",
+  "kind": "quantum_kernel_fidelity_test",
+  "timestamp": "2026-10-29T01:21:23",
+  "backend": "QpiAI QCloud SDK",
+  "device": "QpiAI-QSV-Local",
+  "shots": 2000,
+  "n_qubits": 6,
+  "feature_map": {
+    "n_qubits": 6,
+    "layers": 2,
+    "scales": [
+      0.02,
+      0.2389,
+      0.1058,
+      0.177,
+      0.1235,
+      0.1013
+    ],
+    "entangle": 0.0419
+  },
+  "pairs": [
+    [
+      8,
+      5
+    ],
+    [
+      17,
+      11
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      27,
+      25
+    ],
+    [
+      27,
+      6
+    ]
+  ],
+  "kernel_values": [
+    0.852,
+    0.944,
+    0.944,
+    0.728,
+    0.956,
+    0.8645
+  ],
+  "job_ids": [],
+  "seconds": 0.42,
+  "requested_device": "QpiAI-QSV-Local",
+  "notes": [],
+  "summary": "6 fidelity-test circuits on QpiAI-QSV-Local"
+}

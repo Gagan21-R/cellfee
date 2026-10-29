@@ -1,0 +1,63 @@
+{
+  "run_id": "1029-013931-7137",
+  "kind": "quantum_kernel_fidelity_test",
+  "timestamp": "2026-10-29T01:39:31",
+  "backend": "QpiAI QCloud SDK",
+  "device": "QpiAI-QSV-Local",
+  "shots": 2000,
+  "n_qubits": 6,
+  "feature_map": {
+    "n_qubits": 6,
+    "layers": 2,
+    "scales": [
+      0.02,
+      0.2389,
+      0.1058,
+      0.177,
+      0.1235,
+      0.1013
+    ],
+    "entangle": 0.0419
+  },
+  "pairs": [
+    [
+      23,
+      31
+    ],
+    [
+      24,
+      23
+    ],
+    [
+      23,
+      27
+    ],
+    [
+      22,
+      31
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      27,
+      5
+    ]
+  ],
+  "kernel_values": [
+    0.9605,
+    0.932,
+    0.94,
+    0.908,
+    0.8245,
+    0.8405
+  ],
+  "job_ids": [],
+  "seconds": 16.33,
+  "requested_device": "QpiAI-QDM-Simulator",
+  "notes": [
+    "QpiAI-QDM-Simulator refused the job (Server response: {'error': 'Failed to create job: an active subscription is required to run jobs'}\n\nCommon causes:\n  1. You may not have acc); ran on QpiAI-QSV-Local"
+  ],
+  "summary": "6 fidelity-test circuits on QpiAI-QSV-Local"
+}

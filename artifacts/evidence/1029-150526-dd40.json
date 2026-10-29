@@ -1,0 +1,9 @@
+{
+  "run_id": "1029-150526-dd40",
+  "kind": "twin_verification",
+  "timestamp": "2026-10-29T15:05:26",
+  "backend": "QpiAI QCloud SDK",
+  "device": "QpiAI-QSV-Local",
+  "max_abs_kernel_difference": 3.3306690738754696e-15,
+  "summary": "NumPy twin vs QpiAI SDK kernel: max diff 3.33e-15"
+}

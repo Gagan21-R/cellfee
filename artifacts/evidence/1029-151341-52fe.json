@@ -1,0 +1,30 @@
+{
+  "run_id": "1029-151341-52fe",
+  "kind": "aqsvc_training",
+  "timestamp": "2026-10-29T15:13:41",
+  "backend": "QpiAI Opt (QUBO) + QpiAI QCloud feature-map kernel",
+  "label": "deployed model",
+  "members": [
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -3.907165334562466,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.67,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-3.907165334562458 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 107}",
+      "support_vectors": 10
+    },
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -24.358669940397434,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 13.12,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-24.358669940397508 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 108}",
+      "support_vectors": 23
+    }
+  ],
+  "summary": "2 AQSVC members trained as QUBOs (QpiAI Opt local QUBO annealer), 80 binary variables each"
+}

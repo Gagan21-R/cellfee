@@ -1,0 +1,19 @@
+{
+  "run_id": "1029-205513-039a",
+  "kind": "fleet_allocation",
+  "timestamp": "2026-10-29T20:55:13",
+  "backend": "HiGHS exact MILP (comparison variant)",
+  "label": "aqsvc",
+  "realized_value": 10076.339,
+  "unfit_reused": 4,
+  "reused": 236,
+  "tested": 117,
+  "good_cells_recycled": 55,
+  "mean_pack_health_spread": 0.0094,
+  "forbidden_assignments": 0,
+  "objective": 9877.647,
+  "all_feasible": true,
+  "proven_optimal_batches": 0,
+  "batches_scored": 20,
+  "summary": "aqsvc: 20 batches, value \u20b910076.34, 0 forbidden assignments"
+}

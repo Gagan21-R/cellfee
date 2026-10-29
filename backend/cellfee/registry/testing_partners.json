@@ -1,0 +1,16 @@
+{
+  "_about": "Registered testing partners. DEMO CONFIGURATION: fictional placeholder labs used to exercise the verification workflow; replace with real partner agreements and an authenticated partner API before production. A partner confirms a report by its report ID and the SoH it measured; only that confirmation can move a listing to 'Verification completed'.",
+  "partners": [
+    {"id": "demo-lab-pune", "name": "Demo Battery Test Lab (Pune)", "city": "Pune", "code": "DEMO-PUNE-2026"},
+    {"id": "demo-lab-bengaluru", "name": "Demo EV Diagnostics (Bengaluru)", "city": "Bengaluru", "code": "DEMO-BLR-2026"},
+    {"id": "demo-lab-delhi", "name": "Demo Cell Testing Centre (Delhi)", "city": "Delhi", "code": "DEMO-DEL-2026"}
+  ],
+  "policy": {
+    "report_max_age_days": 180,
+    "soh_conflict_points": 2.0,
+    "partner_soh_tolerance_points": 1.0,
+    "max_report_bytes": 10000000,
+    "max_photo_bytes": 5000000,
+    "max_photos": 8
+  }
+}

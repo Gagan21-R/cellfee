@@ -1,0 +1,29 @@
+{
+  "run_id": "1029-175600-c78c",
+  "kind": "market_matching",
+  "timestamp": "2026-10-29T17:56:00",
+  "backend": "QpiAI Opt local solver",
+  "summary": "4 matches from 21 compatible pairs",
+  "matches": [
+    [
+      "PACK-272",
+      "BUY-02",
+      0.6365
+    ],
+    [
+      "PACK-307",
+      "BUY-01",
+      0.6925
+    ],
+    [
+      "PACK-003",
+      "BUY-03",
+      0.575
+    ],
+    [
+      "LST-11",
+      "BUY-04",
+      0.7485
+    ]
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "run_id": "1029-192610-9170",
+  "kind": "usage_baseline_models",
+  "timestamp": "2026-10-29T19:26:10",
+  "backend": "XGBoost (classifiers per application requirement + quantile regressors per floor)",
+  "inputs": [
+    "soh",
+    "fade_100",
+    "ir_mohm",
+    "ir_rise_100",
+    "temp_max_c",
+    "charge_time_min",
+    "cycles"
+  ],
+  "registry": [
+    "mobility",
+    "solar",
+    "backup",
+    "iot",
+    "home_ups",
+    "peak_shaving",
+    "ev_buffer",
+    "microgrid",
+    "solar_pump",
+    "cold_chain",
+    "datacentre",
+    "material_handling",
+    "traffic_cctv",
+    "emergency_light",
+    "portable"
+  ],
+  "baselines": {
+    "_about": "CELLFEE usage baselines. Policy constants, NOT facts - adjust to your safety standard. Shown in the UI as 'Configured baseline. Adjust to your safety standard.'",
+    "label": "Configured baseline. Adjust to your safety standard.",
+    "note": "Decision support from stored test data. Not a safety certification.",
+    "pathways": {
+      "reuse": {
+        "rule": "per-application baseline from applications.json (min SoH floor, max C-rate, max temperature, max internal resistance, max cycles in service)",
+        "source": "applications.json"
+      },
+      "test": {
+        "label": "Restricted use until tested",
+        "min_soh": 0.8,
+        "max_c_rate": 0.2,
+        "max_temp_c": 40,
+        "max_ir_mohm": 22.0,
+        "max_cycles_in_service": 50,
+        "allowed_safety_tiers": [
+          1
+        ],
+        "rule": "until a full capacity test confirms the grade: low-power, tier-1 duty only, at most 50 cycles",
+        "source": "configured assumption"
+      },
+      "recycle": {
+        "label": "Do not reuse",
+        "rule": "no further usage allowed; send to recycling",
+        "source": "configured assumption"
+      }
+    },
+    "states": {
+      "approaching_margin_cycles": 100,
+      "rule": "Stop use when health is already below the application floor or the cautious (P10) stop period is 0 cycles; Approaching limit when the cautious stop period is within approaching_margin_cycles; otherwise Safe."
+    },
+    "confidence": {
+      "low_threshold_pct": 60,
+      "low_message": "Low confidence - run a full test before deploying."
+    },
+    "risk": {
+      "weights": {
+        "health_margin": 0.25,
+        "fade_rate": 0.25,
+        "resistance_rise": 0.15,
+        "temperature": 0.15,
+        "model_doubt": 0.2
+      },
+      "levels": {
+        "elevated_from": 0.35,
+        "high_from": 0.6
+      },
+      "health_margin": {
+        "good_soh": 0.95,
+        "floor_soh": 0.8
+      },
+      "temperature": {
+        "cool_c": 35,
+        "hot_c": 45
+      },
+      "tier_limit": {
+        "Low": 3,
+        "Elevated": 2,
+        "High": 1
+      },
+      "rule": "risk = weighted mean of five 0-1 components (see usage.py). Fade-rate and resistance-rise components are percentiles within the 8,753 training snapshots. A battery may only serve applications whose safety tier <= tier_limit[risk level]."
+    }
+  },
+  "validation": {
+    "confidence_models": {
+      "f80_c100": {
+        "floor": 0.8,
+        "cycles": 100,
+        "positives": 0.8600479835484977,
+        "brier": 0.014972352665807332,
+        "auc": 0.9971835216552083
+      },
+      "f80_c200": {
+        "floor": 0.8,
+        "cycles": 200,
+        "positives": 0.7195247343767851,
+        "brier": 0.024913977438865063,
+        "auc": 0.9949019150035668
+      },
+      "f80_c300": {
+        "floor": 0.8,
+        "cycles": 300,
+        "positives": 0.5807151833657032,
+        "brier": 0.036254174986366496,
+        "auc": 0.991773079147728
+      },
+      "f84_c100": {
+        "floor": 0.84,
+        "cycles": 100,
+        "positives": 0.8030389580715184,
+        "brier": 0.012504283068051812,
+        "auc": 0.998404026540362
+      },
+      "f84_c200": {
+        "floor": 0.84,
+        "cycles": 200,
+        "positives": 0.6628584485319319,
+        "brier": 0.02454076056169306,
+        "auc": 0.9956581419300488
+      },
+      "f84_c300": {
+        "floor": 0.84,
+        "cycles": 300,
+        "positives": 0.5245058836970181,
+        "brier": 0.03564775376742469,
+        "auc": 0.991229942292501
+      },
+      "f88_c500": {
+        "floor": 0.88,
+        "cycles": 500,
+        "positives": 0.2579686964469325,
+        "brier": 0.04867528502531918,
+        "auc": 0.9815485237332526
+      },
+      "f92_c100": {
+        "floor": 0.92,
+        "cycles": 100,
+        "positives": 0.601622300925397,
+        "brier": 0.012615004193718672,
+        "auc": 0.9989545565096597
+      },
+      "f92_c500": {
+        "floor": 0.92,
+        "cycles": 500,
+        "positives": 0.17639666400091397,
+        "brier": 0.0552853787858549,
+        "auc": 0.9721546613077924
+      }
+    },
+    "stop_period_models": {
+      "0.8": {
+        "coverage_p10_p90": 0.7572260939106592,
+        "below_p10": 0.12955558094367645,
+        "median_abs_error_cycles": 38.90777587890625
+      },
+      "0.84": {
+        "coverage_p10_p90": 0.7613389694961727,
+        "below_p10": 0.1318405118245173,
+        "median_abs_error_cycles": 34.361572265625
+      },
+      "0.88": {
+        "coverage_p10_p90": 0.7880726608020108,
+        "below_p10": 0.11367531132183252,
+        "median_abs_error_cycles": 26.77435302734375
+      },
+      "0.92": {
+        "coverage_p10_p90": 0.8138923797555124,
+        "below_p10": 0.10122243802124986,
+        "median_abs_error_cycles": 15.285804748535156
+      }
+    },
+    "risk_levels": {
+      "Low": {
+        "snapshots": 4965,
+        "reached_80pct_within_100_cycles": 0.0
+      },
+      "Elevated": {
+        "snapshots": 3187,
+        "reached_80pct_within_100_cycles": 0.20269846250392218
+      },
+      "High": {
+        "snapshots": 601,
+        "reached_80pct_within_100_cycles": 0.9633943427620633
+      }
+    }
+  },
+  "summary": "9 confidence models + 4 stop-period models, grouped 5-fold CV on 8753 snapshots"
+}

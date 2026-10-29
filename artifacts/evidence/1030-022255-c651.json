@@ -1,0 +1,16 @@
+{
+  "run_id": "1030-022255-c651",
+  "kind": "marketplace_listing",
+  "timestamp": "2026-10-30T02:22:55",
+  "backend": "CELLFEE marketplace checks",
+  "listing": "L-261030-BB7FF6",
+  "verification": "report_uploaded",
+  "checks": [
+    {
+      "code": "unregistered_provider",
+      "level": "info",
+      "reason": "The report can be shown as seller-submitted, but it cannot be verified until a registered partner tests the battery."
+    }
+  ],
+  "summary": "listing L-261030-BB7FF6 submitted: Report uploaded \u2014 not yet verified"
+}

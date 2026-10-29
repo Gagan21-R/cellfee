@@ -1,0 +1,44 @@
+{
+  "run_id": "1029-205513-c8e8",
+  "kind": "market_matching",
+  "timestamp": "2026-10-29T20:55:13",
+  "backend": "QpiAI Opt local solver",
+  "summary": "7 matches from 43 compatible pairs",
+  "matches": [
+    [
+      "PACK-303",
+      "BUY-06",
+      0.7092
+    ],
+    [
+      "PACK-109",
+      "BUY-02",
+      0.7056
+    ],
+    [
+      "PACK-121",
+      "BUY-07",
+      0.7193
+    ],
+    [
+      "PACK-043",
+      "BUY-01",
+      0.6618
+    ],
+    [
+      "PACK-001",
+      "BUY-05",
+      0.6919
+    ],
+    [
+      "LST-11",
+      "BUY-04",
+      0.687
+    ],
+    [
+      "LST-12",
+      "BUY-03",
+      0.5333
+    ]
+  ]
+}

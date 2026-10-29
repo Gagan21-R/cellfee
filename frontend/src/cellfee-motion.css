@@ -1,0 +1,57 @@
+/* CELLFEE motion layer (Part B). Additive only: every rule here either sets a timing token, styles a NEW explanatory
+   visual, or replaces an existing looping animation with a one-shot driven by cellfee-motion.js. The end state of
+   every animation equals the static UI. Tune everything in :root below (and MOTION in cellfee-motion.js). */
+:root {
+  --m-fast: 180ms;
+  --m-base: 420ms;
+  --m-slow: 900ms;
+  --m-long: 1600ms;
+  --m-ease-out: cubic-bezier(.2, .8, .2, 1);
+  --m-ease-inout: cubic-bezier(.65, 0, .35, 1);
+  --m-stagger: 45ms;
+  --ticker-speed: 50;          /* px per second — the PACK ticker (A1); JS reads this */
+}
+
+/* ---- A1 ticker: speed from content width (JS sets --ticker-duration), pause on hover / keyboard focus ---- */
+.marquee-track { animation-duration: var(--ticker-duration, 38s); }
+.marquee:hover .marquee-track, .marquee:focus-within .marquee-track, .marquee:focus .marquee-track { animation-play-state: paused; }
+.marquee:focus-visible { outline: 3px solid var(--yellow); outline-offset: -3px; }
+
+/* ---- Overview battery grid: the scan bar is driven once by JS (then a faint idle shimmer) ---- */
+.motion-on .m-cells .scan { animation: none; }
+.motion-on .m-cells .lvl { animation: none; }
+
+/* ---- explanatory visuals (new; static = final state) ---- */
+.optgraph .og-edge { stroke-width: 1.2; }
+.optgraph .e-cand { stroke: var(--ink); opacity: 0; }
+.optgraph .e-forbid { stroke: var(--red); opacity: 0; }
+.optgraph .e-pack { stroke: var(--green); stroke-width: 2; }
+.optgraph .og-node { stroke: var(--ink); stroke-width: 1.4; }
+.optgraph .og-name { font-family: var(--mono); font-size: 10px; font-weight: 700; fill: var(--ink); }
+.og-cap { font-family: var(--mono); font-size: 9.5px; fill: var(--ink); }
+.hist-bar { fill: var(--yellow); stroke: var(--ink); stroke-width: .6; }
+.matchlinks { display: grid; gap: 8px; margin: 4px 0 12px; }
+.ml-row { display: grid; grid-template-columns: auto minmax(30px, 1fr) auto; gap: 4px 8px; align-items: center; }
+.ml-box { border: var(--line); box-shadow: var(--sh-sm); background: var(--card); padding: 4px 8px; font-size: 12px; }
+.ml-line { width: 100%; height: 10px; } .ml-line line { stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.ml-ticks { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.ml-tick { color: var(--green); font-family: var(--mono); }
+.motion-caption { position: absolute; left: 12px; right: 12px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; }
+.motion-caption span { font-family: var(--mono); font-size: 11px; text-transform: uppercase; border: var(--line); background: var(--card); padding: 2px 7px; opacity: .35; }
+.motion-caption span.on { background: var(--yellow); opacity: 1; }
+.motion-file { position: fixed; z-index: 60; pointer-events: none; font-family: var(--mono); font-size: 12px; background: var(--yellow);
+  border: var(--line); box-shadow: var(--sh-sm); padding: 6px 10px; }
+
+/* ---- hover micro-interactions (only on elements that are already interactive) ---- */
+@media (hover: hover) {
+  .btn:not(:disabled), .nav button, .explain-btn, .recent, .fleet-table tbody tr { transition: transform var(--m-fast) var(--m-ease-out); }
+  .btn:not(:disabled):hover, .explain-btn:hover, .recent:hover { transform: translate(-1px, -1px); }
+  .nav button:hover { transform: translateY(-1px); }
+}
+
+/* ---- reduced motion: final state at once, ticker becomes a hand-scrollable strip ---- */
+@media (prefers-reduced-motion: reduce) {
+  .marquee { overflow-x: auto; }
+  .marquee-track { animation: none !important; }
+  .btn, .nav button, .explain-btn, .recent, .fleet-table tbody tr { transition: none !important; transform: none !important; }
+}

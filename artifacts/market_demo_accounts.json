@@ -1,0 +1,24 @@
+{
+ "_about": "DEMO personas for the marketplace (fictional). Loading them in the dashboard stores these keys in the browser.",
+ "seller": {
+  "name": "Ananya Rao",
+  "about": "individual owner, Bengaluru",
+  "keys": {
+   "L-261029-9AE9DB": "PqVPIVRW0_DRrK0grBZNrHqMsyxzdVRY",
+   "L-261029-A1FC2B": "H8O6fSNHOvxQZxcwzN_O-cLGV9FOqv0w",
+   "L-261029-527FD6": "1rhQjd7XbeD9sURvay1t5D6QxteRAKgr",
+   "L-261029-865C04": "78BSYXVx4lWp3If5NmXGVAUv_VDJL4O3"
+  }
+ },
+ "buyer": {
+  "name": "Vikram Shetty",
+  "about": "looking for home solar backup",
+  "keys": {
+   "I-E87738": "6OTtkBUcwJjF2oYMnvXCuFEt",
+   "I-793660": "Px7ho7GL4Q0UhsSCODaHxujR",
+   "I-0FCAA8": "ifeNS5j3RhnpMHZvmDEzAdng",
+   "I-D32019": "U4qE0q7Pl5Og9VdCRPINielS",
+   "I-1DAE06": "Jo0Xhb66WSMBoukMQ-kb1ey7"
+  }
+ }
+}
