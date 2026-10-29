@@ -1,5 +1,9 @@
 # CELLFEE — Quantum-assisted second-life intelligence for used EV batteries
 
+**Live app:** https://cellfee.onrender.com (dashboard: https://cellfee.onrender.com/dashboard/; free hosting, so the first visit after a quiet spell takes about a minute to wake up)
+**Demo video (5:41):** https://github.com/Gagan21-R/cellfee/releases/download/demo-video/CELLFEE_demo_1080p.mp4
+**QpiAI rubric, evidence and SDK:** [docs/QPIAI_JUDGING.md](docs/QPIAI_JUDGING.md)
+
 > **Two models judge every battery side by side: XGBoost (classical) and AQSVC (quantum, built on QpiAI QCloud +
 > QpiAI Opt). Where they agree, CELLFEE acts; where they disagree, it tests. QpiAI Opt turns that into a safe,
 > valuable reuse plan.**
