@@ -1,0 +1,12 @@
+.env
+.git
+**/__pycache__
+**/*.pyc
+frontend/node_modules
+frontend/dist
+New Text Document.txt
+artifacts/server*.log
+artifacts/fetch.log
+artifacts/*_before_ensemble.json
+artifacts/results_nasa_backup.json
+artifacts/solved_batches.pkl

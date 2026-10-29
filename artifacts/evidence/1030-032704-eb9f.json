@@ -1,0 +1,31 @@
+{
+  "run_id": "1030-032704-eb9f",
+  "kind": "marketplace_listing",
+  "timestamp": "2026-10-30T03:27:04",
+  "backend": "CELLFEE marketplace checks",
+  "listing": "L-261030-9E113C",
+  "verification": "held",
+  "checks": [
+    {
+      "code": "unregistered_provider",
+      "level": "info",
+      "reason": "The report can be shown as seller-submitted, but it cannot be verified until a registered partner tests the battery."
+    },
+    {
+      "code": "duplicate_report_id",
+      "level": "blocking",
+      "reason": "Report ID CELLFEE-REPORT-DEMO-0001 also appears on listing L-261030-BB7FF6."
+    },
+    {
+      "code": "duplicate_serial",
+      "level": "blocking",
+      "reason": "Battery ID EVB-KA-2048 also appears on listing L-261030-BB7FF6."
+    },
+    {
+      "code": "reused_document",
+      "level": "blocking",
+      "reason": "An identical file is on listing L-261030-BB7FF6; one report should describe one battery."
+    }
+  ],
+  "summary": "listing L-261030-9E113C submitted: Held for review"
+}

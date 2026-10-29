@@ -576,7 +576,9 @@ def sample_report():
              "Vehicle: Tata Nexon EV (2021)", "Age: 4 years", "Type: complete pack", "Location: Pune", "Chemistry: LFP",
              "Measured capacity: 26.1 kWh", "State of Health: 86.5 %", "Rated capacity: 30.2 kWh", "Nominal voltage: 320 V",
              "Internal resistance: 38.5 mOhm", "Tests: capacity discharge at C/3, DCIR pulse, visual inspection, BMS read-out",
-             "Limitations: cells not individually opened; thermal imaging not performed"]
+             "Limitations: cells not individually opened; thermal imaging not performed",
+             "Asking price: Rs 1,85,000", "Price negotiable: Yes", "Condition: No visible damage; stored indoors",
+             "Known faults: None known", "Preferred contact: Phone", "Contact number: +91-90000-11111 (sample)"]
     return Response(_pdf(lines), media_type="application/pdf",
                     headers={"Content-Disposition": f'attachment; filename="sample-battery-report-{n}.pdf"'})
 

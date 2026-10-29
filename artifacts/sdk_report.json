@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30 02:43:56",
+  "generated": "2026-10-30 03:16:33",
   "status": {
     "ok": true,
     "qpiai_quantum_version": "0.3.0",
@@ -10,12 +10,12 @@
     "opt_solver": "QpiAI Opt local solver",
     "qpiai_opt_version": "installed",
     "opt_client_ready": true,
-    "wall_seconds": 2.73
+    "wall_seconds": 1.94
   },
   "kernel": {
     "ok": true,
     "exact_statevector": 0.002764652426181647,
-    "shot_estimate": 0.005,
+    "shot_estimate": 0.0025,
     "shots": 2000,
     "device": "QpiAI-QSV-Local",
     "notes": [],
@@ -25,8 +25,8 @@
       "qubits": 7,
       "layers": 2
     },
-    "evidence_id": "1030-024402-24e1",
-    "wall_seconds": 3.35
+    "evidence_id": "1030-031643-fbbf",
+    "wall_seconds": 8.45
   },
   "train_qubo_svm": {
     "ok": true,
@@ -34,15 +34,15 @@
     "qubo_variables": 80,
     "reads": 4,
     "sweeps": 366,
-    "seconds": 3.92,
+    "seconds": 14.86,
     "energy_qpiai_opt": -6.764813706438585,
     "energy_builtin_annealer": -9.002805996813333,
     "support_vectors": 23,
     "held_out_accuracy_qubo": 0.836,
     "held_out_accuracy_classical_svc": 0.86,
     "held_out_snapshots": 500,
-    "evidence_id": "1030-024410-4e07",
-    "wall_seconds": 7.96
+    "evidence_id": "1030-031720-032c",
+    "wall_seconds": 36.78
   },
   "screen": {
     "ok": true,
@@ -74,9 +74,9 @@
         "action": "recycle"
       }
     ],
-    "seconds": 2.55,
-    "evidence_id": "1030-024413-7653",
-    "wall_seconds": 2.99
+    "seconds": 6.05,
+    "evidence_id": "1030-031727-c8e4",
+    "wall_seconds": 7.53
   },
   "allocate": {
     "ok": true,
@@ -88,19 +88,19 @@
         "solver": "Exact MILP (HiGHS)",
         "objective": 515.818163801149,
         "optimal": true,
-        "seconds": 25.99
+        "seconds": 66.56
       },
       {
         "solver": "QpiAI Opt local MILP (exact)",
         "objective": 515.8181638011488,
         "optimal": false,
-        "seconds": 24.89
+        "seconds": 60.95
       },
       {
         "solver": "QpiAI Opt local QUBO annealer (free-tier budget)",
         "objective": 200.9334773912418,
         "optimal": null,
-        "seconds": 2.92
+        "seconds": 15.27
       }
     ],
     "packs": [
@@ -164,8 +164,8 @@
       "terms": 3268,
       "decision_variables": 165
     },
-    "evidence_id": "1030-024508-b0ee",
-    "wall_seconds": 54.53
+    "evidence_id": "1030-031951-4606",
+    "wall_seconds": 144.27
   },
   "qaoa": {
     "ok": true,
@@ -183,7 +183,7 @@
     "qubo_terms": 64,
     "solver": "XY-mixer QAOA (p=3, CVaR \u03b1=0.25) on QpiAI QCloud circuits",
     "device": "QpiAI-QSV-Local",
-    "optimal_probability": 0.05975,
+    "optimal_probability": 0.06675,
     "random_guess_optimal_probability": 0.02857142857142857,
     "approximation_ratio": 1.0,
     "exact_optimum": {
@@ -200,8 +200,8 @@
       ],
       "feasible_states": 35
     },
-    "evidence_id": "1030-024512-15fb",
-    "wall_seconds": 4.76
+    "evidence_id": "1030-032010-09b7",
+    "wall_seconds": 18.45
   },
   "match": {
     "ok": true,
@@ -1447,8 +1447,8 @@
       ]
     ],
     "total_score": 4.6424,
-    "evidence_id": "1030-024513-ed08",
-    "wall_seconds": 0.16
+    "evidence_id": "1030-032010-0cb4",
+    "wall_seconds": 0.39
   },
   "verify": {
     "ok": true,
@@ -1488,10 +1488,10 @@
       {
         "check": "Evidence log present",
         "pass": true,
-        "detail": "165 run records in artifacts/evidence/"
+        "detail": "185 run records in artifacts/evidence/"
       }
     ],
-    "evidence_id": "1030-024604-dbca",
-    "wall_seconds": 51.61
+    "evidence_id": "1030-032225-478b",
+    "wall_seconds": 134.71
   }
 }

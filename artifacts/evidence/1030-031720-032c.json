@@ -1,0 +1,21 @@
+{
+  "run_id": "1030-031720-032c",
+  "kind": "aqsvc_training",
+  "timestamp": "2026-10-30T03:17:20",
+  "backend": "QpiAI Opt (QUBO) + QpiAI QCloud feature-map kernel",
+  "label": "SDK single-member check",
+  "members": [
+    {
+      "solver": "QpiAI Opt local QUBO annealer",
+      "energy": -6.764813706438585,
+      "reads": 4,
+      "sweeps": 366,
+      "qubo_vars": 80,
+      "seconds": 14.86,
+      "info": "problem_class='QUBO' execution_mode='local' provider='qpiai-opt-local' solver='native-polynomial' method='simulated-annealing' termination='completed' has_usable_solution=True solution_feasible=True optimality_proven=False guarantee='best_found' source_objective=-6.764813706438589 transformed=True settings={'num_reads': 4, 'num_sweeps': 366, 'seed': 7}",
+      "support_vectors": 23,
+      "stage": "sdk"
+    }
+  ],
+  "summary": "1 AQSVC members trained as QUBOs (QpiAI Opt local QUBO annealer), 80 binary variables each"
+}

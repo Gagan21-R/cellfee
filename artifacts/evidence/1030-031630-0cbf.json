@@ -1,0 +1,37 @@
+{
+  "run_id": "1030-031630-0cbf",
+  "kind": "quantum_kernel_fidelity_test",
+  "timestamp": "2026-10-30T03:16:30",
+  "backend": "QpiAI QCloud SDK",
+  "device": "QpiAI-QSV-Local",
+  "shots": 2000,
+  "n_qubits": 7,
+  "feature_map": {
+    "n_qubits": 7,
+    "layers": 2,
+    "scales": [
+      1.1356,
+      1.0803,
+      0.2843,
+      0.5034,
+      0.1169,
+      0.1458,
+      0.2504
+    ],
+    "entangle": 1.1905
+  },
+  "pairs": [
+    [
+      0,
+      1
+    ]
+  ],
+  "kernel_values": [
+    0.003
+  ],
+  "job_ids": [],
+  "seconds": 0.09,
+  "requested_device": "QpiAI-QSV-Local",
+  "notes": [],
+  "summary": "1 fidelity-test circuits on QpiAI-QSV-Local"
+}

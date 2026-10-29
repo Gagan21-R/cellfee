@@ -243,7 +243,7 @@ function Overview({ R, go }) {
             <i />
           </li>
           <Stage i={3} next n={4} icon="quantum" tech="qcloud" explain="arch.4" title="Quantum model: AQSVC" status={{ kind: 'ok', label: 'Simulator' }}
-            sub={`${R.qml.n_qubits}-qubit QpiAI kernel + ${R.aqsvc.members} SVMs trained as ${R.aqsvc.qubo_vars}-variable QUBOs on QpiAI Opt; ${pc(C.aqsvc.accuracy)} accurate. Runs beside XGBoost.`} />
+            sub={`${R.aqsvc.maps ? R.aqsvc.maps.map(m => m.inputs).join(" + ") : R.qml.n_qubits}-qubit QpiAI kernels + ${R.aqsvc.members} SVMs trained as ${R.aqsvc.qubo_vars}-variable QUBOs on QpiAI Opt; ${pc(C.aqsvc.accuracy)} accurate. Runs beside XGBoost.`} />
           <Stage i={4} next n={5} icon="opt" tech="opt" explain="arch.5" title="Allocation Optimization" status={ok}
             sub={`${R.fleet_plan.batches} truckload batches, each a QpiAI Opt model (${plan.qubo.variables}-variable QUBO): reuse, test or recycle, and compatible 4-cell packs.`} />
           <Stage i={5} n={6} icon="decision" tech="classical" explain="arch.6" title="Battery Decisions" status={ok}

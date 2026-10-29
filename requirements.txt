@@ -12,3 +12,4 @@ pypdf
 openpyxl
 rapidocr-onnxruntime
 httpx
+Pillow
