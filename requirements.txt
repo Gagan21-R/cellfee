@@ -3,7 +3,8 @@ qpiai-opt[quantum]
 numpy
 scipy
 scikit-learn
-xgboost
+xgboost==3.4.1; sys_platform != "linux"
+xgboost-cpu==3.4.1; sys_platform == "linux"
 h5py
 fastapi
 uvicorn

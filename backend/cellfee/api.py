@@ -162,7 +162,8 @@ def _fill_gaps(feats: dict) -> tuple[dict, list[str]]:
 
 @app.get("/api/status")
 def api_status():
-    return {**status(), "results_ready": config.RESULTS_JSON.exists()}
+    return {**status(), "results_ready": config.RESULTS_JSON.exists(), "passports": "per-battery database",
+            "server_version": "2026-10-30 low-memory"}
 
 
 @app.get("/api/results")
