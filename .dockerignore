@@ -10,3 +10,5 @@ artifacts/fetch.log
 artifacts/*_before_ensemble.json
 artifacts/results_nasa_backup.json
 artifacts/solved_batches.pkl
+# passports are served from artifacts/fleet_details.db (the JSON stays in the repo for reproducibility)
+artifacts/fleet_details.json

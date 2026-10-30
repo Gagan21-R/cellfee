@@ -8,7 +8,7 @@ COPY frontend/ ./
 RUN npm run build
 
 FROM python:3.12-slim
-ENV PYTHONUTF8=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 PORT=7860
+ENV PYTHONUTF8=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 PORT=7860 CELLFEE_WARM_OCR=0
 # libgl1 / libglib2.0-0: OpenCV (report OCR); libgomp1: XGBoost
 RUN apt-get update && apt-get install -y --no-install-recommends libgl1 libglib2.0-0 libgomp1 \
     && rm -rf /var/lib/apt/lists/*

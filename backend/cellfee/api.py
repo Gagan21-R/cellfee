@@ -5,6 +5,8 @@ from __future__ import annotations
 import base64
 import io
 import json
+import os
+import sys
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -17,7 +19,7 @@ from fastapi.responses import FileResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import config, decision, environment, experience_data, listings, market, quantum_kernel as qk, report_extract, uploads, usage
+from . import config, decision, environment, experience_data, listings, market, passports, quantum_kernel as qk, report_extract, uploads, usage
 from .data import FEATURES, AngleScaler, RankScaler, load_cells, quantum_inputs
 from .sponsors import list_evidence, log_evidence, status
 
@@ -36,12 +38,6 @@ def results() -> dict:
     if not config.RESULTS_JSON.exists():
         raise HTTPException(503, "Run `python -m cellfee.pipeline` first")
     return json.loads(config.RESULTS_JSON.read_text())
-
-
-@lru_cache(maxsize=1)
-def fleet_details() -> dict:
-    path = config.ARTIFACTS / "fleet_details.json"
-    return json.loads(path.read_text()) if path.exists() else {}
 
 
 @lru_cache(maxsize=1)
@@ -69,7 +65,10 @@ def final_model() -> dict:
 
 @app.on_event("startup")
 def warm_ocr() -> None:
-    # the OCR model takes ~15 s to load: do it in the background so the first image upload is quick
+    # the OCR model takes ~15 s to load: do it in the background so the first image upload is quick.
+    # CELLFEE_WARM_OCR=0 (small cloud instances) loads it on the first image upload instead, to save memory.
+    if os.getenv("CELLFEE_WARM_OCR", "1") == "0":
+        return
     import threading
     threading.Thread(target=report_extract.ocr_available, daemon=True).start()
 
@@ -82,6 +81,12 @@ def warm() -> None:
         except (KeyError, FileNotFoundError):   # deployed model from an older pipeline version: retrain it
             return
         _run_aqsvc(np.array([[results()["fleet"][0]["features"][f] for f in FEATURES]]), m)
+    if sys.platform.startswith("linux"):         # hand freed start-up buffers back to the OS (small cloud instances)
+        try:
+            import ctypes
+            ctypes.CDLL("libc.so.6").malloc_trim(0)
+        except OSError:
+            pass
 
 
 def _run_xgb(x: np.ndarray, m: dict) -> dict:
@@ -171,7 +176,7 @@ def api_fleet_one(battery_id: str):
     slim = next((b for b in results()["fleet"] if b["id"] == battery_id), None)
     if slim is None:
         raise HTTPException(404, "unknown battery")
-    return {**slim, **fleet_details().get(battery_id, {})}
+    return {**slim, **passports.get(battery_id)}   # one row read, not the whole 58 MB file
 
 
 @app.get("/api/evidence")

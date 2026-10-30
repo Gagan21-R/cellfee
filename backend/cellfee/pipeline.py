@@ -24,7 +24,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 
 import numpy as np
 
-from . import aqsvc, config, decision, environment, market, models, quantum_kernel as qk, usage
+from . import aqsvc, config, decision, environment, market, models, passports, quantum_kernel as qk, usage
 from .allocation import pair_costs, solve_allocation
 from .data import FEATURE_LABELS, FEATURES, AngleScaler, load_cells, load_snapshots, quantum_inputs, write_processed
 from .qaoa import run_pack_balance
@@ -446,6 +446,7 @@ def run(reuse_cv: bool = False, retrain: bool = False) -> dict:
                         if k.isupper() and isinstance(getattr(config, k), (int, float)) and not isinstance(getattr(config, k), bool)},
     }
     FLEET_DETAILS.write_text(json.dumps(detail, default=float))
+    passports.write(detail)                     # per-battery rows: the API reads one passport at a time
     config.RESULTS_JSON.write_text(json.dumps(results, default=float))
     log(f"done in {results['runtime_s']} s -> {config.RESULTS_JSON} ({n} batteries)")
     return results
