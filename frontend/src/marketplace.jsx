@@ -19,6 +19,9 @@ const DEMO_KEY = 'cellfee-demo-persona'
 const sellerKeys = store('cellfee-seller-keys'), buyerKeys = store('cellfee-buyer-keys')
 
 const toB64 = file => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(',')[1]); r.onerror = rej; r.readAsDataURL(file) })
+// file-picker filters as plain extensions: MIME wildcards such as image/* make the Windows file picker very slow to open
+const REPORT_TYPES = '.pdf,.doc,.docx,.jpg,.jpeg,.png,.webp'
+const PHOTO_TYPES = '.jpg,.jpeg,.png,.webp'
 export const NA = 'not_available'
 export const show = v => (v === NA ? 'Not available' : v == null || v === '' ? '—' : String(v))
 const VCLASS = { verified: 'reuse', awaiting_provider: 'test', report_uploaded: 'test', more_testing: 'test', mismatch: 'recycle', held: 'recycle', rejected: 'recycle', draft: '' }
@@ -351,8 +354,8 @@ function QuickSell({ cities, back, onDone }) {
         <b>Drop the report and photos here</b>
         <span className="small muted">Report: PDF, Word, or a photo of it (max 10 MB) · Photos: JPEG / PNG / WEBP (max 5 MB each)</span>
         <div className="row" style={{ flexWrap: 'wrap', justifyContent: 'center' }}>
-          <label className="btn small-btn">Choose the report<input type="file" hidden accept=".pdf,.doc,.docx,image/*" onChange={e => { e.target.files?.[0] && setReport(e.target.files[0]); e.target.value = '' }} /></label>
-          <label className="btn small-btn">Add photos<input type="file" hidden multiple accept="image/jpeg,image/png,image/webp" onChange={e => { setPhotos(p => [...p, ...e.target.files].slice(0, 8)); e.target.value = '' }} /></label>
+          <label className="btn small-btn">Choose the report<input type="file" hidden accept={REPORT_TYPES} onChange={e => { e.target.files?.[0] && setReport(e.target.files[0]); e.target.value = '' }} /></label>
+          <label className="btn small-btn">Add photos<input type="file" hidden multiple accept={PHOTO_TYPES} onChange={e => { const picked = [...e.target.files]; e.target.value = ''; setPhotos(p => [...p, ...picked].slice(0, 8)) }} /></label>
         </div>
       </div>
       <div className="mk-files small">
@@ -508,7 +511,7 @@ function PhotoStep({ v, draft, setV, run, busy, next }) {
     <div className="callout warn small"><b>Safety:</b> do not open, dismantle or handle a high-voltage battery to take photos. Existing photos and documents are fine.</div>
     <div className="row" style={{ marginTop: 10, flexWrap: 'wrap' }}>
       <select className="btn" value={kind} onChange={e => setKind(e.target.value)}><option value="exterior">Exterior</option><option value="label">Label / identifier</option><option value="connector">Connector / specification</option><option value="condition">Other condition photo</option></select>
-      <input type="file" accept="image/jpeg,image/png,image/webp" disabled={busy || v.photos.length >= 8} onChange={e => { e.target.files?.[0] && add(e.target.files[0]); e.target.value = '' }} />
+      <input type="file" accept={PHOTO_TYPES} disabled={busy || v.photos.length >= 8} onChange={e => { e.target.files?.[0] && add(e.target.files[0]); e.target.value = '' }} />
       <span className="small muted">JPEG / PNG / WEBP, max 5 MB, up to 8 photos</span>
     </div>
     <div className="mk-photos" style={{ marginTop: 10 }}>{v.photos.map(p => <figure key={p.n}><img src={`/api/listings/${draft.id}/photos/${p.n}?token=${encodeURIComponent(draft.token)}`} alt={`${p.kind} photo`} /><figcaption className="small">{p.kind} · <button className="link-btn" onClick={() => del(p.n)}>remove</button></figcaption></figure>)}</div>
